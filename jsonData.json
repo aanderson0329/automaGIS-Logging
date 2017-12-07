@@ -3072,7 +3072,8 @@
 "2017-12-06 09:53:06 AM - geoKNX: ERROR 000725: GRM_DATA_Rename.gdb: Dataset \\\\naples\\GIS_WorkSpace\\neigh_svcs\\RapidRes\\ARCHIVE\\GRM_DATA_automaGIS.gdb already exists.",
 "2017-12-06 09:53:06 AM - geoKNX: WARNING 000725: Output data element: Dataset \\\\naples\\GIS_WorkSpace\\neigh_svcs\\RapidRes\\ARCHIVE\\GRM_DATA_automaGIS.gdb already exists.",
 "2017-12-06 09:53:06 AM - geoKNX: Failed to execute (CopytoArchiveFolder).",
-"2017-12-06 09:53:06 AM - geoKNX: "]][["001205201709000",
+"2017-12-06 09:53:06 AM - geoKNX: "]]
+["001205201709000",
 "descPRD",
 "2017-12-05",
 "09:00:00 AM",
