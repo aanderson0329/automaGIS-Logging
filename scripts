@@ -1,4 +1,4 @@
-scripts = [
+[
     {"cron": "06 11 * * 2", "taskPath": "python \\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\SOURCE_CONTROL\\dev\\returner.py", "taskID": "345cdfqfw4d54q23", "taskName": "descGDB1", "taskUser": "auanderson", "taskStart": "01/08/2017 18:30"},
     {"cron": "11 10 * * 2", "taskPath": "python \\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\SOURCE_CONTROL\\dev\\returner.py", "taskID": "345cdfqfw4d54q23", "taskName": "descGDB1", "taskUser": "auanderson", "taskStart": "01/08/2017 18:30"},
     {"cron": "11 10 * * 2", "taskPath": "python \\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\SOURCE_CONTROL\\dev\\returner.py", "taskID": "345cdfqfw4d54q23", "taskName": "descGDB1", "taskUser": "auanderson", "taskStart": "01/08/2017 18:30"},
@@ -9,4 +9,4 @@ scripts = [
     {"cron": "11 10 * * 2", "taskPath": "python \\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\DescribeGeodatabaseScript\\descGDB_AA.py \"Connection to PRDGIS as CLVGIS.sde\" \"Database Connections\" \"\\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\DescribeGeodatabaseScript\\OutputFiles\"", "taskID": "345cdfqfw4d54q23", "taskName": "descGDB1", "taskUser": "auanderson", "taskStart": "01/08/2017 18:30"},
     {"cron": "11 10 * * 2", "taskPath": "python \\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\DescribeGeodatabaseScript\\descGDB_AA.py \"Connection to PRDGIS as CLVGIS.sde\" \"Database Connections\" \"\\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\DescribeGeodatabaseScript\\OutputFiles\"", "taskID": "345cdfqfw4d54q23", "taskName": "descGDB1", "taskUser": "auanderson", "taskStart": "01/08/2017 18:30"},
     {"cron": "55 14 * * 1", "taskPath": "python \\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\DescribeGeodatabaseScript\\descGDB_AA.py \"Connection to PRDGIS as CLVGIS.sde\" \"Database Connections\" \"\\\\naples\\GIS_WorkSpace\\clvgis\\auanderson\\Scripts\\DescribeGeodatabaseScript\\OutputFiles\\tsert\"", "taskID": "24255242352k", "taskName": "desc2", "taskUser": "auanderson", "taskStart": "01/08/2017 18:30"}
-    ]
+]
