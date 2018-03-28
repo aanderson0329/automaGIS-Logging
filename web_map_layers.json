@@ -136,7 +136,7 @@
         },
         {
           "layer_name": "City Parks",
-          "data_source": "https://opendata.arcgis.com/datasets/c258a90169ea490eb1abcb029ac4573b_0.geojson"
+          "data_source": "https://raw.githubusercontent.com/aanderson0329/automaGIS-Logging/master/parks.geojson"
         },
         {
           "layer_name": "Bike Trails",
