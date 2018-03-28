@@ -1,1 +1,278 @@
-{"for":"WebMapLayers","layer_groups":[{"group_name":"Base Layers","layers":[{"layer_name":"Wards","data_source":""},{"layer_name":"CLV Addresses","data_source":""},{"layer_name":"Parcels","data_source":""},{"layer_name":"Building Footprints","data_source":""},{"layer_name":"Cities","data_source":""},{"layer_name":"City Limits","data_source":""},{"layer_name":"Landuse Text","data_source":""},{"layer_name":"Trails","data_source":""},{"layer_name":"Zoning","data_source":""},{"layer_name":"ROI Zoning","data_source":""},{"layer_name":"General Plan/Future Land Use","data_source":""},{"layer_name":"Las Vegas Arts District","data_source":""}]},{"group_name":"Administrative Boundaries","layers":[{"layer_name":"BLM Parcels","data_source":""},{"layer_name":"City Property","data_source":""},{"layer_name":"Park and Ride Locations","data_source":""}]},{"group_name":"Reference Information","layers":[{"layer_name":"Census Tracts","data_source":""}]},{"group_name":"City Facilities","layers":[{"layer_name":"Government Services","data_source":""},{"layer_name":"All City Facilities","data_source":""}]},{"group_name":"Private Development","layers":[{"layer_name":"Drainage Studies","data_source":""}]},{"group_name":"Cultural","layers":[{"layer_name":"Downtown Points of Interest","data_source":""}]},{"group_name":"Sustainability","layers":[{"layer_name":"Solar","data_source":""},{"layer_name":"Community Gardens","data_source":""},{"layer_name":"LEED Buildings","data_source":""},{"layer_name":"Recycling Locations","data_source":""},{"layer_name":"Electric Vehicle Plug-In Stations","data_source":""},{"layer_name":"City Parks","data_source":""},{"layer_name":"Bike Trails","data_source":""},{"layer_name":"RTC Bus Routes","data_source":""}]},{"group_name":"Imagery","layers":[{"layer_name":"Aerials - 6 in. - Most Current","data_source":""}]},{"group_name":"Existing Infrastructure","layers":[{"layer_name":"Survey Benchmarks","data_source":""},{"layer_name":"CCRFCD Flood Control Facilities","data_source":""},{"layer_name":"CLV Sewers","data_source":""},{"layer_name":"Private Sewer Reference","data_source":""},{"layer_name":"CLV Storm Drain Manholes and Drop Inlets","data_source":""},{"layer_name":"CLV Flood Control Facilities","data_source":""},{"layer_name":"Flood Zones","data_source":""},{"layer_name":"Suggested School Routes","data_source":""}]},{"group_name":"Transportation","layers":[{"layer_name":"Private Streets","data_source":""},{"layer_name":"Sweeper Areas","data_source":""},{"layer_name":"Parking Areas","data_source":""},{"layer_name":"Major Streets","data_source":""},{"layer_name":"Freeways","data_source":""}]},{"group_name":"Public Safety","layers":[{"layer_name":"Fire Stations","data_source":""}]},{"group_name":"Planned Infrastructure","layers":[{"layer_name":"Regional Flood Control Detention Basins","data_source":""},{"layer_name":"Capital Improvement Projects","data_source":""},{"layer_name":"Proposed Local Drainage","data_source":""},{"layer_name":"Regional Flood Control Storm Drains","data_source":""}]},{"group_name":"Development Services","layers":[{"layer_name":"Building Permits","data_source":""},{"layer_name":"Code Enforcement","data_source":""},{"layer_name":"Rapid Response Graffiti","data_source":""},{"layer_name":"Environmental Compliance","data_source":""},{"layer_name":"Special Improvement Districts","data_source":""}]}]}
+{
+  "for": "WebMapLayers",
+  "layer_groups": [
+    {
+      "group_name": "Base Layers",
+      "layers": [
+        {
+          "layer_name": "Wards",
+          "data_source": ""
+        },
+        {
+          "layer_name": "CLV Addresses",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Parcels",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Building Footprints",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Cities",
+          "data_source": ""
+        },
+        {
+          "layer_name": "City Limits",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Landuse Text",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Trails",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Zoning",
+          "data_source": ""
+        },
+        {
+          "layer_name": "ROI Zoning",
+          "data_source": ""
+        },
+        {
+          "layer_name": "General Plan/Future Land Use",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Las Vegas Arts District",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Administrative Boundaries",
+      "layers": [
+        {
+          "layer_name": "BLM Parcels",
+          "data_source": ""
+        },
+        {
+          "layer_name": "City Property",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Park and Ride Locations",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Reference Information",
+      "layers": [
+        {
+          "layer_name": "Census Tracts",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "City Facilities",
+      "layers": [
+        {
+          "layer_name": "Government Services",
+          "data_source": ""
+        },
+        {
+          "layer_name": "All City Facilities",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Private Development",
+      "layers": [
+        {
+          "layer_name": "Drainage Studies",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Cultural",
+      "layers": [
+        {
+          "layer_name": "Downtown Points of Interest",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Sustainability",
+      "layers": [
+        {
+          "layer_name": "Solar",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Community Gardens",
+          "data_source": ""
+        },
+        {
+          "layer_name": "LEED Buildings",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Recycling Locations",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Electric Vehicle Plug-In Stations",
+          "data_source": ""
+        },
+        {
+          "layer_name": "City Parks",
+          "data_source": "https://opendata.arcgis.com/datasets/c258a90169ea490eb1abcb029ac4573b_0.geojson"
+        },
+        {
+          "layer_name": "Bike Trails",
+          "data_source": ""
+        },
+        {
+          "layer_name": "RTC Bus Routes",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Imagery",
+      "layers": [
+        {
+          "layer_name": "Aerials - 6 in. - Most Current",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Existing Infrastructure",
+      "layers": [
+        {
+          "layer_name": "Survey Benchmarks",
+          "data_source": ""
+        },
+        {
+          "layer_name": "CCRFCD Flood Control Facilities",
+          "data_source": ""
+        },
+        {
+          "layer_name": "CLV Sewers",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Private Sewer Reference",
+          "data_source": ""
+        },
+        {
+          "layer_name": "CLV Storm Drain Manholes and Drop Inlets",
+          "data_source": ""
+        },
+        {
+          "layer_name": "CLV Flood Control Facilities",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Flood Zones",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Suggested School Routes",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Transportation",
+      "layers": [
+        {
+          "layer_name": "Private Streets",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Sweeper Areas",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Parking Areas",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Major Streets",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Freeways",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Public Safety",
+      "layers": [
+        {
+          "layer_name": "Fire Stations",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Planned Infrastructure",
+      "layers": [
+        {
+          "layer_name": "Regional Flood Control Detention Basins",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Capital Improvement Projects",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Proposed Local Drainage",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Regional Flood Control Storm Drains",
+          "data_source": ""
+        }
+      ]
+    },
+    {
+      "group_name": "Development Services",
+      "layers": [
+        {
+          "layer_name": "Building Permits",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Code Enforcement",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Rapid Response Graffiti",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Environmental Compliance",
+          "data_source": ""
+        },
+        {
+          "layer_name": "Special Improvement Districts",
+          "data_source": ""
+        }
+      ]
+    }
+  ]
+}
