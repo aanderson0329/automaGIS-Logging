@@ -9,8 +9,8 @@
           "data_source": "https://opendata.arcgis.com/datasets/3b5d399346244c81b97c43514613566e_0.geojson"
         },
         {
-          "layer_name": "CLV Addresses",
-          "data_source": ""
+          "layer_name": "Medical Marijuana",
+          "data_source": "https://opendata.arcgis.com/datasets/892309e55f234e92a329d03374608ae3_0.geojson"
         },
         {
           "layer_name": "Parcels",
