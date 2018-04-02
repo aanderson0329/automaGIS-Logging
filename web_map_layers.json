@@ -139,8 +139,8 @@
           "data_source": "https://opendata.arcgis.com/datasets/c258a90169ea490eb1abcb029ac4573b_0.geojson"
         },
         {
-          "layer_name": "Bike Trails",
-          "data_source": ""
+          "layer_name": "Park Hardscapes",
+          "data_source": "https://opendata.arcgis.com/datasets/6e53b3f63e384269b9714d71870458e0_21.geojson"
         },
         {
           "layer_name": "RTC Bus Routes",
