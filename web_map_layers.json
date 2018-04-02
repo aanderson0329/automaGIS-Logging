@@ -17,8 +17,8 @@
           "data_source": ""
         },
         {
-          "layer_name": "Building Footprints",
-          "data_source": ""
+          "layer_name": "Precincts",
+          "data_source": "https://opendata.arcgis.com/datasets/3e738fdaca2b4aeba0c18a2478cae956_0.geojson"
         },
         {
           "layer_name": "Cities",
