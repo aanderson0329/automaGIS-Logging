@@ -224,7 +224,7 @@
       "layers": [
         {
           "layer_name": "Fire Stations",
-          "data_source": ""
+          "data_source": "https://opendata.arcgis.com/datasets/271cd6bc8f4c43d9b53c54312db42ab8_0.geojson"
         }
       ]
     },
