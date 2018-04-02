@@ -25,8 +25,8 @@
           "data_source": "https://opendata.arcgis.com/datasets/7c2209fbbafd4fc6aaccbaf3213b5451_0.geojson"
         },
         {
-          "layer_name": "City Limits",
-          "data_source": ""
+          "layer_name": "Phantoms",
+          "data_source": "https://opendata.arcgis.com/datasets/a816f2adce21400aa867ce94981ea93b_1.geojson"
         },
         {
           "layer_name": "Landuse Text",
