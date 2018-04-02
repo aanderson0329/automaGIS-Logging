@@ -14,7 +14,7 @@
         },
         {
           "layer_name": "Parcels",
-          "data_source": "http://mapdata.lasvegasnevada.gov/clvgis/rest/services/AdministrativeBoundaries/Parcel_Info/MapServer"
+          "data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/AdministrativeBoundaries/Parcel_Info/MapServer"
         },
         {
           "layer_name": "Precincts",
