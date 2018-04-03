@@ -6,7 +6,21 @@
       "layers": [
         {
           "layer_name": "Wards",
-          "data_source": "https://opendata.arcgis.com/datasets/3b5d399346244c81b97c43514613566e_0.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/3b5d399346244c81b97c43514613566e_0.geojson",
+          "display_fields": [
+              ["WARD_LUTWARD","Ward Number","text"],
+              ["WARD_LUTNAME","Ward Councilperson","text"],
+              ["WARD_LUTURL","Ward URL Link","link"],
+              ["WARD_LUTPIC","Councilperson Image","image"]            
+            ],
+          "layer_style": {
+              "fillColor":"#5c6bc0",
+              "fillOpacity":"0.5",
+              "strokeColor":"#1a237e",
+              "strokeOpacity":"1.0",
+              "strokeWeight":"8"
+          },
+          "default_z_index": "5000"
         },
         {
           "layer_name": "Medical Marijuana",
