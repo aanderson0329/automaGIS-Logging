@@ -15,12 +15,13 @@
             ],
           "layer_style": {
               "fillColor":"#5c6bc0",
-              "fillOpacity":"0.5",
+              "fillOpacity": 0.5,
               "strokeColor":"#1a237e",
-              "strokeOpacity":"1.0",
-              "strokeWeight":"8"
+              "strokeOpacity": 1.0,
+              "strokeWeight": 8
           },
-          "default_z_index": "5000"
+          "default_z_index": 5000,
+          "toggled": false
         },
         {
           "layer_name": "Medical Marijuana",
