@@ -14,13 +14,13 @@
               ["WARD_LUTPIC","Councilperson Image","image"]            
             ],
           "layer_style": {
+              "z_index": 5000,
               "fillColor":"#5c6bc0",
               "fillOpacity": 0.5,
               "strokeColor":"#1a237e",
               "strokeOpacity": 1.0,
               "strokeWeight": 8
           },
-          "default_z_index": 5000,
           "toggled": false
         },
         {
