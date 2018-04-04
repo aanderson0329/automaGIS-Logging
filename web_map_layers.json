@@ -14,7 +14,10 @@
               ["WARD_LUTPIC","Councilperson Image","image"]            
             ],
           "layer_style": {
-              "layer_style_rules": "function(feature) {var ward = feature.getProperty('CLV_WARDSWARD');var color = 'black';if (ward == '1') {color = 'yellow';} else if (ward == '2') {color = 'orange';} else if (ward == '3') {color = 'blue';} else if (ward == '4') {color = 'green';} else if (ward == '5') {color = 'grey';} else if (ward == '6') {color = 'brown';}return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 1};}",
+              "layer_style_rules": {
+                "function": "var ward = feature.getProperty('CLV_WARDSWARD');var color = 'black';if (ward == '1') {color = 'yellow';} else if (ward == '2') {color = 'orange';} else if (ward == '3') {color = 'blue';} else if (ward == '4') {color = 'green';} else if (ward == '5') {color = 'grey';} else if (ward == '6') {color = 'brown';}return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 1};",
+                "passed_variables": "feature"
+              },
               "zIndex": 5000,
               "fillColor":"green",
               "fillOpacity": 0.5,
