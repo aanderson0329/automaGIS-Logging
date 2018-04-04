@@ -31,7 +31,7 @@
           "layer_name": "Medical Marijuana",
           "data_source": "https://opendata.arcgis.com/datasets/892309e55f234e92a329d03374608ae3_0.geojson",
           "layer_style": {
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAbFBMVEX///8AplEBplL8/v0Cp1IEp1T7/vwQrFzy+vaA06iw48nF69f3/PoKqVhbxo/d8+gfsWaL17DZ8uWT2bUntGzq+PFjyZU6unmy5MpDvX/L7dx30KJdxpDJ7Nqb3Lur4sa86NFQwohtzJsvtnHvSqPjAAABZ0lEQVQokVWS63qDIAyGIYDISaiCiLZS9f7vcWFbt/b7gXny5gCJhPyIpbXe1G03qSMfSvUepRNOxmP37N/fmUFySoEDHrIs/QvYegkqZD7mIQdBeZx+EasRIMzL6FHPM3AIP4g9LuDXnthzKMfCep0FxKX1SnOzLGE3LKk6bJo5PzymPAOVkyV/hHQaPXtH+lPwI5E30lyALp8xwPYohWRLaFgsEx/E4Lku8zAMF1C48HvfW3QlVdLsNwEoiu9EYfsD3K2R4k+cwL+KHxrRmDMqiXLoFM2Y/UHdREykwYyL1nUWFIaqtV7Hq/XxBXn3cevW4VqJVQKK/yDpDjD3hGE5p/o3YndJQ20v3hwNO4ZMjjdicfTi3qZCxoJLUL5b1bkZlqbI4TLfe2UmA3VlMqMfH/shgcfKXssujoILueSIWxdZ29e62bhF8TsAEc717RchvVElBilD3p79O8A0mx5L1cb/+b8AfIgZFythh3IAAAAASUVORK5CYII="
+            "icon": "https://www.emeraldcitypilates.com/favicon.ico"
           },
           "toggled": true
         },
