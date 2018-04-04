@@ -11,7 +11,7 @@
               ["WARD_LUTWARD","Ward Number","text"],
               ["WARD_LUTNAME","Ward Councilperson","text"],
               ["WARD_LUTURL","Ward URL Link","link"],
-              ["WARD_LUTURLPIC","Councilperson Image","image"]            
+              ["WARD_LUTURLPIC","Councilperson Image","link"]            
             ],
           "layer_style": {
               "layer_style_rules": {
