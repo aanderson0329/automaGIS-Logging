@@ -45,7 +45,7 @@
         },
         {
           "layer_name": "Phantoms VERY LARGE",
-          "data_source": "https://opendata.arcgis.com/datasets/a816f2adce21400aa867ce94981ea93b_1.geojson"
+          "data_source": ""
         },
         {
           "layer_name": "Park Hardscapes",
