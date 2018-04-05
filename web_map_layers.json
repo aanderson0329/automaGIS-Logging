@@ -7,6 +7,7 @@
         {
           "layer_name": "Wards",
           "data_source": "https://opendata.arcgis.com/datasets/3b5d399346244c81b97c43514613566e_0.geojson",
+          "id_property_field":"CLV_WARDSOBJECTID",
           "display_fields": [
               ["WARD_LUTWARD","Ward Number","text"],
               ["WARD_LUTNAME","Ward Councilperson","text"],
@@ -17,19 +18,14 @@
               "layer_style_rules": {
                 "function": "var ward = feature.getProperty('CLV_WARDSWARD');var color = 'black';if (ward == '1') {color = 'yellow';} else if (ward == '2') {color = 'orange';} else if (ward == '3') {color = 'blue';} else if (ward == '4') {color = 'green';} else if (ward == '5') {color = 'grey';} else if (ward == '6') {color = 'brown';}return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 1};",
                 "parameters": "feature"
-              },
-              "zIndex": 5000,
-              "fillColor":"green",
-              "fillOpacity": 0.5,
-              "strokeColor":"green",
-              "strokeOpacity": 1.0,
-              "strokeWeight": 8
+              }             
           },
           "toggled": true
         },
         {
           "layer_name": "Medical Marijuana",
           "data_source": "https://opendata.arcgis.com/datasets/892309e55f234e92a329d03374608ae3_0.geojson",
+          "id_property_field":"OBJECTID",
           "layer_style": {
             "icon": "https://www.emeraldcitypilates.com/favicon.ico"
           },
@@ -37,39 +33,57 @@
         },
         {
           "layer_name": "Precincts",
-          "data_source": "https://opendata.arcgis.com/datasets/3e738fdaca2b4aeba0c18a2478cae956_0.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/3e738fdaca2b4aeba0c18a2478cae956_0.geojson",
+          "id_property_field":"OBJECTID",
+          "layer_style": {
+            "zIndex": 5000,
+            "fillColor":"green",
+            "fillOpacity": 0.5,
+            "strokeColor":"green",
+            "strokeOpacity": 1.0,
+            "strokeWeight": 8 
+          },
+          "toggled": false
         },
         {
           "layer_name": "Animal Control Beats",
-          "data_source": "https://opendata.arcgis.com/datasets/7c2209fbbafd4fc6aaccbaf3213b5451_0.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/7c2209fbbafd4fc6aaccbaf3213b5451_0.geojson",
+          "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Phantoms VERY LARGE",
-          "data_source": "https://opendata.arcgis.com/datasets/a816f2adce21400aa867ce94981ea93b_1.geojson"
+          "data_source": "",
+          "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Park Hardscapes",
-          "data_source": "https://opendata.arcgis.com/datasets/6e53b3f63e384269b9714d71870458e0_21.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/6e53b3f63e384269b9714d71870458e0_21.geojson",
+          "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "City Parks",
-          "data_source": "https://opendata.arcgis.com/datasets/c258a90169ea490eb1abcb029ac4573b_0.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/c258a90169ea490eb1abcb029ac4573b_0.geojson",
+          "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Through Streets",
-          "data_source": "https://opendata.arcgis.com/datasets/64a16dd208684f4d96bb8b77edcbe6f9_0.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/64a16dd208684f4d96bb8b77edcbe6f9_0.geojson",
+          "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Environmental Compliance - Class II Permits",
-          "data_source": "https://opendata.arcgis.com/datasets/3c03b34501364516977589543a1e47c2_0.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/3c03b34501364516977589543a1e47c2_0.geojson",
+          "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Private Parks",
-          "data_source": "https://opendata.arcgis.com/datasets/54366d0ab8f24786b5274498cf92680c_1.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/54366d0ab8f24786b5274498cf92680c_1.geojson",
+          "id_property_field":"OBJECTID_12"
         },
         {
           "layer_name": "Park Structures",
-          "data_source": "https://opendata.arcgis.com/datasets/d87f1a0957124d0888b65a0db9bbb006_18.geojson"
+          "data_source": "https://opendata.arcgis.com/datasets/d87f1a0957124d0888b65a0db9bbb006_18.geojson",
+          "id_property_field":"OBJECTID"
         }
       ]
     }
