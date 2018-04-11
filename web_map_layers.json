@@ -20,6 +20,14 @@
                 "parameters": "feature"
               }             
           },
+          "legend": [
+              ["Ward 1","yellow"],
+              ["Ward 2","orange"],
+              ["Ward 3","blue"],
+              ["Ward 4","green"],
+              ["Ward 5","grey"],
+              ["Ward 6","brown"]
+            ],
           "toggled": true
         },
         {
