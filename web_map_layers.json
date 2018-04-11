@@ -84,6 +84,11 @@
           "layer_name": "Park Structures",
           "data_source": "https://opendata.arcgis.com/datasets/d87f1a0957124d0888b65a0db9bbb006_18.geojson",
           "id_property_field":"OBJECTID"
+        },
+        {
+          "layer_name": "Jurisdictions",
+          "data_source": "https://opendata.arcgis.com/datasets/13f35f74589b4bb0b8d9a4de4c444158_0.geojson",
+          "id_property_field":"OBJECTID"
         }
       ]
     }
