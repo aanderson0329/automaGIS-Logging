@@ -37,11 +37,11 @@
           "id_property_field":"OBJECTID",
           "layer_style": {
             "zIndex": 5000,
-            "fillColor":"green",
-            "fillOpacity": 0.5,
-            "strokeColor":"green",
+            "fillColor":"black",
+            "fillOpacity": 0,
+            "strokeColor":"black",
             "strokeOpacity": 1.0,
-            "strokeWeight": 8 
+            "strokeWeight": 2
           },
           "toggled": false
         },
