@@ -29,7 +29,7 @@
           "layer_style": {
             "icon": "https://www.emeraldcitypilates.com/favicon.ico"
           },
-          "toggled": true
+          "toggled": false
         },
         {
           "layer_name": "Precincts",
