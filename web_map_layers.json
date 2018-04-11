@@ -107,11 +107,6 @@
           "layer_name": "City Facilities",
           "data_source": "https://opendata.arcgis.com/datasets/53385f4e5f2d476ab238c1ec472e15f7_0.geojson",
           "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "Sewer Mains",
-          "data_source": "https://opendata.arcgis.com/datasets/f5ad99485507440aa0e43bee51ef7d5c_6.geojson",
-          "id_property_field":"OBJECTID"
         }
       ]
     }
