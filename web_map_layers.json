@@ -131,7 +131,7 @@
                 "function": "var time = feature.getProperty('TIME_LIMIT');var color = 'black';if (time == 'None') {color = 'green';} else if (time == '4HR') {color = 'orange';} else if (time == '2HR') {color = 'yellow';} else if (time == '10HR') {color = 'green';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 1};",
                 "parameters": "feature"
               }             
-          },
+          }
         }
       ]
     }
