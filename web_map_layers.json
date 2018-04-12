@@ -51,7 +51,21 @@
             "strokeOpacity": 1.0,
             "strokeWeight": 2
           },
-          "toggled": true
+          "toggled": false
+        },
+        {
+          "layer_name": "Planning Cases by Parcel",
+          "data_source": "https://opendata.arcgis.com/datasets/f0b7d04f2e234404bf330ecac5685fc3_0.geojson",
+          "id_property_field":"OBJECTID_1",
+          "layer_style": {
+            "zIndex": 5000,
+            "fillColor":"black",
+            "fillOpacity": 0,
+            "strokeColor":"grey",
+            "strokeOpacity": 1.0,
+            "strokeWeight": 1
+          },
+          "toggled": false
         },
         {
           "layer_name": "Animal Control Beats",
@@ -106,6 +120,11 @@
         {
           "layer_name": "City Facilities",
           "data_source": "https://opendata.arcgis.com/datasets/53385f4e5f2d476ab238c1ec472e15f7_0.geojson",
+          "id_property_field":"OBJECTID"
+        },
+        {
+          "layer_name": "Parking Meter Zones",
+          "data_source": "https://opendata.arcgis.com/datasets/0281be85aee14279ac9e8315ee5051f2_3.geojson",
           "id_property_field":"OBJECTID"
         }
       ]
