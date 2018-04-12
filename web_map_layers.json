@@ -74,6 +74,20 @@
           "toggled": false
         },
         {
+          "layer_name": "Parcels",
+          "data_source": "https://opendata.arcgis.com/datasets/ff80011ba1af4fc78d436b7cf9605812_0.geojson",
+          "id_property_field":"OBJECTID",
+          "layer_style": {
+            "zIndex": 4000,
+            "fillColor":"black",
+            "fillOpacity": 0,
+            "strokeColor":"grey",
+            "strokeOpacity": 1.0,
+            "strokeWeight": 1
+          },
+          "toggled": false
+        },
+        {
           "layer_name": "Animal Control Beats",
           "data_source": "https://opendata.arcgis.com/datasets/7c2209fbbafd4fc6aaccbaf3213b5451_0.geojson",
           "id_property_field":"OBJECTID"
