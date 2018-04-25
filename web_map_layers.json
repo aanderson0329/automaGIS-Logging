@@ -137,7 +137,13 @@
                 "function": "var time = feature.getProperty('TIME_LIMIT');var color = 'black';if (time == 'None') {color = 'green';} else if (time == '4HR') {color = 'orange';} else if (time == '2HR') {color = 'yellow';} else if (time == '10HR') {color = 'blue';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 4,zIndex: 1};",
                 "parameters": "feature"
               }             
-          }
+          },
+          "legend": [
+            ["Parking Meter Zones - No Limit", {"lineColor": "green", "lineWidth": "4px"}],
+            ["Parking Meter Zones - 4HR Limit", {"lineColor": "orange", "lineWidth": "4px"}],
+            ["Parking Meter Zones - 2HR Limit", {"lineColor": "yellow", "lineWidth": "4px"}],
+            ["Parking Meter Zones - 10HR Limit", {"lineColor": "blue", "lineWidth": "4px"}]
+          ]
         }
       ]
     }
