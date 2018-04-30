@@ -34,6 +34,31 @@
           "max_zoom": "17"
         },
         {
+          "layer_name": "Sewer Mains",
+          "data_source_type": "MapServer",
+          "data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/ExistingInfrastructure/CollectionSystems/MapServer",
+          "id_property_field":"OBJECTID",
+          "mapserver_layer_number": "6",          
+          "legend": [
+              ["Sewer Mains", {"lineColor": "black", "lineWidth": "4px"}]
+            ],
+          "toggled": false,
+          "min_zoom": "17",
+          "max_zoom": "20"
+        },
+          {
+          "layer_name": "Sewer Mains geojson",
+          "data_source": "https://opendata.arcgis.com/datasets/f5ad99485507440aa0e43bee51ef7d5c_6.geojson",
+          "id_property_field":"OBJECTID",
+          "layer_style": {
+            "zIndex": 5000,
+            "lineColor":"#ffffff",
+            "lineOpacity": 1.0,
+            "lineWeight": 1
+          },
+          "toggled": false
+        },
+        {
           "layer_name": "Medical Marijuana",
           "data_source": "https://opendata.arcgis.com/datasets/892309e55f234e92a329d03374608ae3_0.geojson",
           "id_property_field":"OBJECTID",
