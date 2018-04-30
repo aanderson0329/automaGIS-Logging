@@ -82,11 +82,6 @@
           "id_property_field":"OBJECTID"
         },
         {
-          "layer_name": "Phantoms VERY LARGE",
-          "data_source": "",
-          "id_property_field":"OBJECTID"
-        },
-        {
           "layer_name": "Park Hardscapes",
           "data_source": "https://opendata.arcgis.com/datasets/6e53b3f63e384269b9714d71870458e0_21.geojson",
           "id_property_field":"OBJECTID"
