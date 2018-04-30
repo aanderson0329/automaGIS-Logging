@@ -74,6 +74,18 @@
           "toggled": false
         },
         {
+          "layer_name": "Sewer Mains",
+          "data_source": "https://opendata.arcgis.com/datasets/f5ad99485507440aa0e43bee51ef7d5c_6.geojson",
+          "id_property_field":"OBJECTID",
+          "layer_style": {
+            "zIndex": 5000,
+            "strokeColor":"green",
+            "strokeOpacity": 1.0,
+            "strokeWeight": 1
+          },
+          "toggled": false
+        },
+        {
           "layer_name": "Animal Control Beats",
           "data_source": "https://opendata.arcgis.com/datasets/7c2209fbbafd4fc6aaccbaf3213b5451_0.geojson",
           "id_property_field":"OBJECTID"
