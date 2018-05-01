@@ -40,11 +40,11 @@
           "id_property_field":"OBJECTID",
           "mapserver_layer_number": "9",          
           "legend": [
-              ["Sewer Mains", {"lineColor": "#ffffff", "lineWidth": "3px"}]
+              ["Sewer Mains", {"lineColor": "#0261f9", "lineWidth": "3px"}]
             ],
           "layer_style": {
             "zIndex": 50000,
-            "lineColor":"#ffffff",
+            "lineColor":"#0261f9",
             "lineOpacity": 1.0,
             "lineWeight": 3
           },
