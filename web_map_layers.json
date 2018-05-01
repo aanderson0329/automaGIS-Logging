@@ -44,7 +44,7 @@
             ],
           "layer_style": {
             "zIndex": 50000,
-            "lineColor":"red",
+            "lineColor":"#005aed",
             "lineOpacity": 1.0,
             "lineWeight": 5
           },
