@@ -38,7 +38,26 @@
           "data_source_type": "MapServer",
           "data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/ExistingInfrastructure/CollectionSystems/MapServer",
           "id_property_field":"OBJECTID",
-          "mapserver_layer_number": "2",          
+          "mapserver_layer_number": "9",          
+          "legend": [
+              ["Sewer Mains", {"lineColor": "#ffffff", "lineWidth": "3px"}]
+            ],
+          "layer_style": {
+            "zIndex": 50000,
+            "lineColor":"#ffffff",
+            "lineOpacity": 1.0,
+            "lineWeight": 3
+          },
+          "toggled": false,
+          "min_zoom": "17",
+          "max_zoom": "20"
+        },
+        {
+          "layer_name": "Sewer Mains style rules",
+          "data_source_type": "MapServer",
+          "data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/ExistingInfrastructure/CollectionSystems/MapServer",
+          "id_property_field":"OBJECTID",
+          "mapserver_layer_number": "9",          
           "legend": [
               ["Sewer Mains", {"lineColor": "black", "lineWidth": "4px"}]
             ],
@@ -46,7 +65,7 @@
           "min_zoom": "17",
           "max_zoom": "20"
         },
-          {
+        {
           "layer_name": "Sewer Mains geojson",
           "data_source": "https://opendata.arcgis.com/datasets/f5ad99485507440aa0e43bee51ef7d5c_6.geojson",
           "id_property_field":"OBJECTID",
