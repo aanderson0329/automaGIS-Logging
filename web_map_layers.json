@@ -44,9 +44,9 @@
             ],
           "layer_style": {
             "zIndex": 50000,
-            "lineColor":"#0261f9",
+            "lineColor":"red",
             "lineOpacity": 1.0,
-            "lineWeight": 3
+            "lineWeight": 5
           },
           "toggled": false,
           "min_zoom": "17",
