@@ -34,6 +34,16 @@
           "max_zoom": "17"
         },
         {
+          "layer_name": "Parcels",
+          "data_source_type": "parcels",
+          "legend": [
+              ["Parcels",{"fillColor": "rgba(255, 250, 5, 0)", "borderColor": "rgba(22, 239, 255, 1)", "borderWidth": "2px"}]
+            ],
+          "toggled": true,
+          "min_zoom": "17",
+          "max_zoom": "20"
+        },
+        {
           "layer_name": "cip_ptsmaintenance",
           "data_source_type": "MapServer",
           "data_source": "https://mapdata-lasvegasnevada-gov.appspot.com/services/cip_ptsmaintenance/geojson",
