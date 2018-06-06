@@ -167,7 +167,7 @@
         },
         {
           "layer_name": "Jurisdictions",
-          "data_source": "https://opendata.arcgis.com/datasets/13f35f74589b4bb0b8d9a4de4c444158_0.geojson",
+          "data_source": "https://opendata.arcgis.com/agol/arcgis/13f35f74589b4bb0b8d9a4de4c444158/0.geojson",
           "id_property_field":"OBJECTID"
         },
         {
