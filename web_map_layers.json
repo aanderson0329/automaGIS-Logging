@@ -2,7 +2,7 @@
   "for": "WebMapLayers",
   "layer_groups": [
     {
-      "group_name": "Working TEST Layers",
+      "group_name": "Base Layers",
       "layers": [
         {
           "layer_name": "Wards",
@@ -40,7 +40,7 @@
               ["Parcels",{"fillColor": "rgba(255, 250, 5, 0)", "borderColor": "rgba(22, 239, 255, 1)", "borderWidth": "2px"}]
             ],
           "toggled": true,
-          "min_zoom": "18",
+          "min_zoom": "17",
           "max_zoom": "20"
         },
         {
