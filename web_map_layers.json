@@ -146,7 +146,7 @@
           "legend": [
               ["Precincts",{"fillColor": "rgba(0, 0, 0, 0)", "borderColor": "rgba(0, 0, 0, 1)", "borderWidth": "2px"}]
             ],
-          "toggled": false
+          "toggled": true
         },
         {
           "layer_name": "Planning Cases by Parcel",
