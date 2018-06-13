@@ -41,11 +41,11 @@
             ],
           "toggled": true,
           "min_zoom": "17",
-          "max_zoom": "20"
+          "max_zoom": "30"
         },
         {
           "layer_name": "cip_ptsmaintenance",
-          "data_source_type": "MapServer",
+          "data_source_type": "MapServerGeojson",
           "data_source": "https://mapdata-lasvegasnevada-gov.appspot.com/services/cip_ptsmaintenance/geojson",
           "id_property_field":"OBJECTID",
           "mapserver_layer_number": "6",          
@@ -60,11 +60,11 @@
           },
           "toggled": false,
           "min_zoom": "17",
-          "max_zoom": "20"
+          "max_zoom": "30"
         },
         {
           "layer_name": "cip_lmaintenance",
-          "data_source_type": "MapServer",
+          "data_source_type": "MapServerGeojson",
           "data_source": "https://mapdata-lasvegasnevada-gov.appspot.com/services/cip_lmaintenance/geojson",
           "id_property_field":"OBJECTID",
           "mapserver_layer_number": "9",          
@@ -73,7 +73,39 @@
             ],
           "toggled": false,
           "min_zoom": "17",
-          "max_zoom": "20"
+          "max_zoom": "30"
+        },
+        {
+          "layer_name": "Neighborhood Areas Mapserver",
+          "data_source_type": "MapServerSingleUrl",
+          "data_source": "http://mapdata.lasvegasnevada.gov/clvgis/rest/services/AdministrativeBoundaries/Parcel_Info/MapServer/2/query?where=1%3D1&outFields=*&outSR=4326&f=json",
+          "id_property_field":"OBJECTID",          
+          "legend": [
+              ["Neighborhood Areas", {"lineColor": "black", "lineWidth": "4px"}]
+            ],
+          "toggled": true,
+          "min_zoom": "10",
+          "max_zoom": "30"
+        },
+        {
+          "layer_name": "Neighborhood Areas geojson",
+          "data_source_type": "MapServerSingleUrl",
+          "data_source": "https://opendata.arcgis.com/datasets/ff80011ba1af4fc78d436b7cf9605812_2.geojson",
+          "id_property_field":"OBJECTID", 
+          "layer_style": {
+            "zIndex": 5000,
+            "fillColor":"blue",
+            "fillOpacity": 1,
+            "strokeColor":"grey",
+            "strokeOpacity": 2.0,
+            "strokeWeight": 1
+          },
+          "legend": [
+              ["Neighborhood Areas", {"lineColor": "black", "lineWidth": "4px"}]
+            ],
+          "toggled": true,
+          "min_zoom": "10",
+          "max_zoom": "30"
         },
         {
           "layer_name": "Sewer Mains geojson",
