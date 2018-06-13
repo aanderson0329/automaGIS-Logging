@@ -89,11 +89,11 @@
         },
         {
           "layer_name": "Neighborhood Areas geojson",
-          "data_source_type": "MapServerSingleUrl",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/ff80011ba1af4fc78d436b7cf9605812_2.geojson",
           "id_property_field":"OBJECTID", 
           "layer_style": {
-            "zIndex": 5000,
+            "zIndex": 5002,
             "fillColor":"blue",
             "fillOpacity": 1,
             "strokeColor":"grey",
