@@ -103,7 +103,7 @@
           "legend": [
               ["Neighborhood Areas", {"lineColor": "black", "lineWidth": "4px"}]
             ],
-          "toggled": true,
+          "toggled": false,
           "min_zoom": "10",
           "max_zoom": "30"
         },
@@ -146,7 +146,9 @@
           "legend": [
               ["Precincts",{"fillColor": "rgba(0, 0, 0, 0)", "borderColor": "rgba(0, 0, 0, 1)", "borderWidth": "2px"}]
             ],
-          "toggled": true
+          "toggled": true,
+          "min_zoom": "10",
+          "max_zoom": "30"
         },
         {
           "layer_name": "Planning Cases by Parcel",
