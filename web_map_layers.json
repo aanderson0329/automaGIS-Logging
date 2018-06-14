@@ -109,6 +109,7 @@
         },
         {
           "layer_name": "Sewer Mains geojson",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/f5ad99485507440aa0e43bee51ef7d5c_6.geojson",
           "id_property_field":"OBJECTID",
           "layer_style": {
@@ -121,6 +122,7 @@
         },
         {
           "layer_name": "Medical Marijuana",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/892309e55f234e92a329d03374608ae3_0.geojson",
           "id_property_field":"OBJECTID",
           "layer_style": {
