@@ -134,6 +134,7 @@
         {
           "layer_name": "Precincts",
           "data_source": "https://opendata.arcgis.com/datasets/3e738fdaca2b4aeba0c18a2478cae956_0.geojson",
+          "data_source_type": "geojson",
           "id_property_field":"OBJECTID",
           "layer_style": {
             "zIndex": 5000,
@@ -153,6 +154,7 @@
         {
           "layer_name": "Planning Cases by Parcel",
           "data_source": "https://opendata.arcgis.com/datasets/f0b7d04f2e234404bf330ecac5685fc3_0.geojson",
+          "data_source_type": "geojson",
           "id_property_field":"OBJECTID_1",
           "layer_style": {
             "zIndex": 5000,
@@ -166,56 +168,67 @@
         },
         {
           "layer_name": "Animal Control Beats",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/7c2209fbbafd4fc6aaccbaf3213b5451_0.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Park Hardscapes",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/6e53b3f63e384269b9714d71870458e0_21.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "City Parks",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/c258a90169ea490eb1abcb029ac4573b_0.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Through Streets",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/64a16dd208684f4d96bb8b77edcbe6f9_0.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Environmental Compliance - Class II Permits",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/3c03b34501364516977589543a1e47c2_0.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Private Parks",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/54366d0ab8f24786b5274498cf92680c_1.geojson",
           "id_property_field":"OBJECTID_12"
         },
         {
           "layer_name": "Park Structures",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/d87f1a0957124d0888b65a0db9bbb006_18.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Jurisdictions",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/agol/arcgis/13f35f74589b4bb0b8d9a4de4c444158/0.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "City Limits",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/edfc142e2eac413baee3ed19d73195b5_0.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "City Facilities",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/53385f4e5f2d476ab238c1ec472e15f7_0.geojson",
           "id_property_field":"OBJECTID"
         },
         {
           "layer_name": "Parking Meter Zones",
+          "data_source_type": "geojson",
           "data_source": "https://opendata.arcgis.com/datasets/0281be85aee14279ac9e8315ee5051f2_3.geojson",
           "id_property_field":"OBJECTID",
           "layer_style": {
