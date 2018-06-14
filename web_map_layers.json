@@ -29,7 +29,7 @@
               ["Ward 5",{"fillColor": "rgba(170, 170, 170, 0.5)", "borderColor": "rgba(170, 170, 170, 1)", "borderWidth": "1px"}],
               ["Ward 6",{"fillColor": "rgba(132, 77, 45, 0.5)", "borderColor": "rgba(132, 77, 45, 1)", "borderWidth": "1px"}]
             ],
-          "toggled": true,
+          "toggled": false,
           "min_zoom": "10",
           "max_zoom": "20"
         },
@@ -83,7 +83,7 @@
           "legend": [
               ["Neighborhood Areas", {"lineColor": "black", "lineWidth": "4px"}]
             ],
-          "toggled": true,
+          "toggled": false,
           "min_zoom": "10",
           "max_zoom": "30"
         },
