@@ -77,7 +77,7 @@
           "legend": [
               ["Zoning", {"lineColor": "black", "lineWidth": "4px"}]
             ],
-          "toggled": true,
+          "toggled": false,
           "min_zoom": "17",
           "max_zoom": "30"
         },
