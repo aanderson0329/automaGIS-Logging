@@ -68,15 +68,49 @@
           "data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/DevelopmentServices/Zoning/MapServer",
           "id_property_field":"OBJECTID",
           "mapserver_layer_number": "0",
+          "display_fields": [
+              ["ZONE","Zone","text"],
+              ["PARCEL","Parcel","text"],
+              ["PARENTPCL","Parent Parcel","text"],
+              ["DESCRIPTION","Description","text"],
+              ["Label_Class","Class","text"] 
+            ],
+          "legend": [
+              ["C-1: Limited Commercial",{"fillColor": "rgba(219, 190, 255, 0.65)", "borderColor": "rgba(219, 190, 255, 1)", "borderWidth": "2px"}],
+              ["C-2: General Commercial",{"fillColor": "rgba(203, 122, 237, 0.65)", "borderColor": "rgba(203, 122, 237, 1)", "borderWidth": "2px"}],
+              ["C-D: Designed Commercial",{"fillColor": "rgba(180, 18, 214, 0.65)", "borderColor": "rgba(180, 18, 214, 1)", "borderWidth": "2px"}],
+              ["C-M: Commercial/Industrial",{"fillColor": "rgba(154, 9, 207, 0.65)", "borderColor": "rgba(154, 9, 207, 1)", "borderWidth": "2px"}],
+              ["C-PB: Planned Business Park",{"fillColor": "rgba(182, 74, 130, 0.65)", "borderColor": "rgba(182, 74, 130, 1)", "borderWidth": "2px"}],
+              ["C-V: Civic",{"fillColor": "rgba(255, 255, 204, 0.65)", "borderColor": "rgba(255, 255, 204, 1)", "borderWidth": "2px"}],
+              ["M: Industrial",{"fillColor": "rgba(234, 170, 105, 0.65)", "borderColor": "rgba(234, 170, 105, 1)", "borderWidth": "2px"}],
+              ["N-S: Neighborhood Service",{"fillColor": "rgba(245, 245, 220, 0.65)", "borderColor": "rgba(245, 245, 220, 1)", "borderWidth": "2px"}],
+              ["O: Office",{"fillColor": "rgba(23, 20, 31, 0.65)", "borderColor": "rgba(23, 20, 31, 1)", "borderWidth": "2px"}],
+              ["P-C: Planned Community",{"fillColor": "rgba(153, 255, 204, 0.65)", "borderColor": "rgba(153, 255, 204, 1)", "borderWidth": "2px"}],
+              ["P-O: Professional Office",{"fillColor": "rgba(185, 191, 152, 0.65)", "borderColor": "rgba(185, 191, 152, 1)", "borderWidth": "2px"}],
+              ["PD: Planned Development",{"fillColor": "rgba(204, 255, 230, 0.65)", "borderColor": "rgba(204, 255, 230, 1)", "borderWidth": "2px"}],
+              ["R-1: Single Family Residential",{"fillColor": "rgba(148, 164, 166, 0.65)", "borderColor": "rgba(148, 164, 166, 1)", "borderWidth": "2px"}],
+              ["R-2: Medium/Low Density Residential",{"fillColor": "rgba(177, 209, 194, 0.65)", "borderColor": "rgba(177, 209, 194, 1)", "borderWidth": "2px"}],
+              ["R-3: Medium Density Residential",{"fillColor": "rgba(77, 104, 108, 0.65)", "borderColor": "rgba(77, 104, 108, 1)", "borderWidth": "2px"}],
+              ["R-4: High Density Residential",{"fillColor": "rgba(77, 108, 81, 0.65)", "borderColor": "rgba(77, 108, 81, 1)", "borderWidth": "2px"}],
+              ["R-5: Apartments",{"fillColor": "rgba(39, 45, 1, 0.65)", "borderColor": "rgba(39, 45, 1, 1)", "borderWidth": "2px"}],
+              ["R-A: Ranch Acres",{"fillColor": "rgba(232, 234, 233, 0.65)", "borderColor": "rgba(232, 234, 233, 1)", "borderWidth": "2px"}],
+              ["R-CL: Single Family Compact Lot",{"fillColor": "rgba(170, 221, 221, 0.65)", "borderColor": "rgba(170, 221, 221, 1)", "borderWidth": "2px"}],
+              ["R-D: Single Family Residential Restricted",{"fillColor": "rgba(127, 178, 240, 0.65)", "borderColor": "rgba(127, 178, 240, 1)", "borderWidth": "2px"}],
+              ["R-E: Residence Estates",{"fillColor": "rgba(78, 122, 199, 0.65)", "borderColor": "rgba(78, 122, 199, 1)", "borderWidth": "2px"}],
+              ["R-MH: Mobile Home Residence",{"fillColor": "rgba(53, 71, 140, 0.65)", "borderColor": "rgba(53, 71, 140, 1)", "borderWidth": "2px"}],
+              ["R-MHP: Mobile Home Residence Part",{"fillColor": "rgba(22, 25, 59, 0.65)", "borderColor": "rgba(22, 25, 59, 1)", "borderWidth": "2px"}],
+              ["R-PD: Residential Planned Development",{"fillColor": "rgba(80, 48, 54, 0.65)", "borderColor": "rgba(80, 48, 54, 1)", "borderWidth": "2px"}],
+              ["T-D: Traditional Development",{"fillColor": "rgba(127, 101, 96, 0.65)", "borderColor": "rgba(127, 101, 96, 1)", "borderWidth": "2px"}],
+              ["TC: Town Center",{"fillColor": "rgba(191, 177, 164, 0.65)", "borderColor": "rgba(191, 177, 164, 1)", "borderWidth": "2px"}],
+              ["U: Undeveloped",{"fillColor": "rgba(81, 242, 26, 0.65)", "borderColor": "rgba(81, 242, 26, 1)", "borderWidth": "2px"}],
+              ["Other/Unlisted Zones",{"fillColor": "rgba(242, 46, 206, 0.65)", "borderColor": "rgba(242, 46, 206, 1)", "borderWidth": "2px"}]
+            ],
           "layer_style": {
               "layer_style_rules": {
-                "function": "var zone = feature.attributes.ZONE;var color = 'white';if (zone == 'C-1') {color = '#dbbeff';} else if (zone == 'C-2') {color = '#cb7aed';} else if (zone == 'C-D') {color = '#b412d6';} else if (zone == 'C-M') {color = '#9a09cf';} else if (zone == 'C-PB') {color = '#b64a82';} else if (zone == 'C-V') {color = '#ffffcc';} else if (zone == 'M') {color = '#eaaa69';} else if (zone == 'N-S') {color = '#f5f5dc';} else if (zone == 'O') {color = '#17141f';} else if (zone == 'P-C') {color = '#99ffcc';} else if (zone == 'P-O') {color = '#b9bf98';} else if (zone == 'P-R') {color = '#b9bf98';} else if (zone == 'PD') {color = '#ccffe6';} else if (zone == 'R-1') {color = '#94a4a6';} else if (zone == 'R-2') {color = '#b1d1c2';} else if (zone == 'R-3') {color = '#4d686c';} else if (zone == 'R-4') {color = '#4d6c51';} else if (zone == 'R-5') {color = '#272d01';} else if (zone == 'R-A') {color = '#e8eae9';} else if (zone == 'R-CL') {color = '#addsf7';} else if (zone == 'R-D') {color = '#7fb2f0';} else if (zone == 'R-E') {color = '#4e7ac7';} else if (zone == 'R-MH') {color = '#35478C';} else if (zone == 'R-MHP') {color = '#16193b';} else if (zone.includes('R-PD')) {color = '#503036';} else if (zone == 'T-D') {color = '#7f6560';} else if (zone == 'TC') {color = '#bfb1a4';} else if (zone == 'U') {color = '#51f21a';} return {fillColor: color,fillOpacity: 0.65,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 1};",
+                "function": "var zone = feature.attributes.ZONE;var color = '#f22ece';if (zone == 'C-1') {color = '#dbbeff';} else if (zone == 'C-2') {color = '#cb7aed';} else if (zone == 'C-D') {color = '#b412d6';} else if (zone == 'C-M') {color = '#9a09cf';} else if (zone == 'C-PB') {color = '#b64a82';} else if (zone == 'C-V') {color = '#ffffcc';} else if (zone == 'M') {color = '#eaaa69';} else if (zone == 'N-S') {color = '#f5f5dc';} else if (zone == 'O') {color = '#17141f';} else if (zone == 'P-C') {color = '#99ffcc';} else if (zone == 'P-O') {color = '#b9bf98';} else if (zone == 'P-R') {color = '#b9bf98';} else if (zone == 'PD') {color = '#ccffe6';} else if (zone == 'R-1') {color = '#94a4a6';} else if (zone == 'R-2') {color = '#b1d1c2';} else if (zone == 'R-3') {color = '#4d686c';} else if (zone == 'R-4') {color = '#4d6c51';} else if (zone == 'R-5') {color = '#272d01';} else if (zone == 'R-A') {color = '#e8eae9';} else if (zone == 'R-CL') {color = '#addsf7';} else if (zone == 'R-D') {color = '#7fb2f0';} else if (zone == 'R-E') {color = '#4e7ac7';} else if (zone == 'R-MH') {color = '#35478C';} else if (zone == 'R-MHP') {color = '#16193b';} else if (zone.includes('R-PD')) {color = '#503036';} else if (zone == 'T-D') {color = '#7f6560';} else if (zone == 'TC') {color = '#bfb1a4';} else if (zone == 'U') {color = '#51f21a';} return {fillColor: color,fillOpacity: 0.65,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 1};",
                 "parameters": "feature"
               }             
           },
-          "legend": [
-              ["Zoning", {"lineColor": "black", "lineWidth": "4px"}]
-            ],
           "toggled": false,
           "min_zoom": "17",
           "max_zoom": "30"
