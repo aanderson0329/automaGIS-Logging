@@ -78,7 +78,7 @@
               ["Zoning", {"lineColor": "black", "lineWidth": "4px"}]
             ],
           "toggled": false,
-          "min_zoom": "18",
+          "min_zoom": "17",
           "max_zoom": "30"
         },
         {
