@@ -39,8 +39,8 @@
           "legend": [
               ["Parcels",{"fillColor": "rgba(255, 250, 5, 0)", "borderColor": "rgba(22, 239, 255, 1)", "borderWidth": "2px"}]
             ],
-          "toggled": true,
-          "min_zoom": "17",
+          "toggled": false,
+          "min_zoom": "18",
           "max_zoom": "30"
         },
         {
@@ -78,7 +78,7 @@
               ["Zoning", {"lineColor": "black", "lineWidth": "4px"}]
             ],
           "toggled": false,
-          "min_zoom": "17",
+          "min_zoom": "18",
           "max_zoom": "30"
         },
         {
