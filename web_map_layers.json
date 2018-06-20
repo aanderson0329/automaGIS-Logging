@@ -111,7 +111,7 @@
                 "parameters": "feature"
               }             
           },
-          "toggled": false,
+          "toggled": true,
           "min_zoom": "17",
           "max_zoom": "30"
         },
