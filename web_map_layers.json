@@ -482,7 +482,31 @@
 					"toggled": false,
 					"min_zoom": "10",
 					"max_zoom": "30"				
-				}
+				},
+				{					
+					"layer_name": "Historic Areas",
+					"data_source": "https://opendata.arcgis.com/datasets/730f3e6deeba4caea75f204a5fb4be9c_1.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#65DED7",
+						"fillOpacity": 0.5,
+						"strokeColor": "#65DED7",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Las Vegas Arts District", {
+							"fillColor": "rgba(101, 222, 215, 0.5)",
+							"borderColor": "rgba(101, 222, 215, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
 			]
 		}
 	]
