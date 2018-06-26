@@ -244,7 +244,7 @@
 					"max_zoom": "18",
 					"layer_style": {
 						"layer_style_rules": {
-							"function": "var city = feature.getProperty('NAME');var color = 'black'; var opacity = .5; if (city === 'City of North Las Vegas') {color = '#E37B40';} else if (city === 'Nellis AFB') {color = '#46B29D';} else if (city === 'City of Mesquite') {color = '#DE5B49';} else if (city === 'City of Las Vegas') {color = '#324D5C';} else if (city === 'City of Henderson') {color = '#F0CA4D';} else if (city === 'Boulder City') {color = '#56345C';} else {opacity = 0;} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 2,zIndex: 5};",
+							"function": "var city = feature.getProperty('NAME');var color = 'black'; var opacity = .5; if (city === 'City of North Las Vegas') {color = '#E37B40';} else if (city === 'Nellis AFB') {color = '#46B29D';} else if (city === 'City of Mesquite') {color = '#DE5B49';} else if (city === 'City of Las Vegas') {color = '#324D5C';} else if (city === 'City of Henderson') {color = '#F0CA4D';} else if (city === 'Boulder City') {color = '#56345C';} else {opacity = 0;} return {fillColor: color,fillOpacity: opacity,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 2,zIndex: 5};",
 							"parameters": "feature"
 						}
 					},
