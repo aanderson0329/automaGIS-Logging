@@ -1,305 +1,489 @@
 {
-  "for": "WebMapLayers",
-  "layer_groups": [
-    {
-      "group_name": "Base Layers",
-      "layers": [
-        {
-          "layer_name": "Wards",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/3b5d399346244c81b97c43514613566e_0.geojson",
-          "id_property_field":"CLV_WARDSOBJECTID",
-          "display_fields": [
-              ["WARD_LUTWARD","Ward Number","text"],
-              ["WARD_LUTNAME","Ward Councilperson","text"],
-              ["WARD_LUTURL","Ward URL Link","link"],
-              ["WARD_LUTURLPIC","Councilperson Image","image"]            
-            ],
-          "layer_style": {
-              "layer_style_rules": {
-                "function": "var ward = feature.getProperty('CLV_WARDSWARD');var color = 'black';if (ward == '1') {color = 'yellow';} else if (ward == '2') {color = 'orange';} else if (ward == '3') {color = 'blue';} else if (ward == '4') {color = 'green';} else if (ward == '5') {color = 'grey';} else if (ward == '6') {color = 'rgb(132, 77, 45)';}return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 1};",
-                "parameters": "feature"
-              }             
-          },
-          "legend": [
-              ["Ward 1",{"fillColor": "rgba(255, 250, 5, 0.5)", "borderColor": "rgba(255, 250, 5, 1)", "borderWidth": "1px"}],
-              ["Ward 2",{"fillColor": "rgba(255, 159, 5, 0.5)", "borderColor": "rgba(255, 159, 5, 1)", "borderWidth": "1px"}],
-              ["Ward 3",{"fillColor": "rgba(5, 38, 255, 0.5)", "borderColor": "rgba(5, 38, 255, 1)", "borderWidth": "1px"}],
-              ["Ward 4",{"fillColor": "rgba(3, 178, 20, 0.5)", "borderColor": "rgba(3, 178, 20, 1)", "borderWidth": "1px"}],
-              ["Ward 5",{"fillColor": "rgba(170, 170, 170, 0.5)", "borderColor": "rgba(170, 170, 170, 1)", "borderWidth": "1px"}],
-              ["Ward 6",{"fillColor": "rgba(132, 77, 45, 0.5)", "borderColor": "rgba(132, 77, 45, 1)", "borderWidth": "1px"}]
-            ],
-          "toggled": true,
-          "min_zoom": "10",
-          "max_zoom": "20"
-        },
-        {
-          "layer_name": "Parcels",
-          "data_source_type": "parcels",
-          "legend": [
-              ["Parcels",{"fillColor": "rgba(255, 250, 5, 0)", "borderColor": "rgba(22, 239, 255, 1)", "borderWidth": "2px"}]
-            ],
-          "toggled": false,
-          "min_zoom": "18",
-          "max_zoom": "30"
-        },
-        {
-          "layer_name": "cip_ptsmaintenance",
-          "data_source_type": "MapServerGeojson",
-          "data_source": "https://mapdata-lasvegasnevada-gov.appspot.com/services/cip_ptsmaintenance/geojson",
-          "id_property_field":"OBJECTID",
-          "mapserver_layer_number": "6",          
-          "legend": [
-              ["Sewer Mains", {"lineColor": "#0261f9", "lineWidth": "3px"}]
-            ],
-          "layer_style": {
-            "zIndex": 50000,
-            "lineColor":"#005aed",
-            "lineOpacity": 1.0,
-            "lineWeight": 5
-          },
-          "toggled": false,
-          "min_zoom": "17",
-          "max_zoom": "30"
-        },
-        {
-          "layer_name": "Zoning",
-          "data_source_type": "MapServer",
-          "data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/DevelopmentServices/Zoning/MapServer",
-          "id_property_field":"OBJECTID",
-          "mapserver_layer_number": "0",
-          "display_fields": [
-              ["ZONE","Zone","text"],
-              ["PARCEL","Parcel","text"],
-              ["PARENTPCL","Parent Parcel","text"],
-              ["DESCRIPTION","Description","text"],
-              ["Label_Class","Class","text"] 
-            ],
-          "legend": [
-              ["C-1: Limited Commercial",{"fillColor": "rgba(219, 190, 255, 0.65)", "borderColor": "rgba(219, 190, 255, 1)", "borderWidth": "2px"}],
-              ["C-2: General Commercial",{"fillColor": "rgba(203, 122, 237, 0.65)", "borderColor": "rgba(203, 122, 237, 1)", "borderWidth": "2px"}],
-              ["C-D: Designed Commercial",{"fillColor": "rgba(180, 18, 214, 0.65)", "borderColor": "rgba(180, 18, 214, 1)", "borderWidth": "2px"}],
-              ["C-M: Commercial/Industrial",{"fillColor": "rgba(154, 9, 207, 0.65)", "borderColor": "rgba(154, 9, 207, 1)", "borderWidth": "2px"}],
-              ["C-PB: Planned Business Park",{"fillColor": "rgba(182, 74, 130, 0.65)", "borderColor": "rgba(182, 74, 130, 1)", "borderWidth": "2px"}],
-              ["C-V: Civic",{"fillColor": "rgba(255, 255, 204, 0.65)", "borderColor": "rgba(255, 255, 204, 1)", "borderWidth": "2px"}],
-              ["M: Industrial",{"fillColor": "rgba(234, 170, 105, 0.65)", "borderColor": "rgba(234, 170, 105, 1)", "borderWidth": "2px"}],
-              ["N-S: Neighborhood Service",{"fillColor": "rgba(245, 245, 220, 0.65)", "borderColor": "rgba(245, 245, 220, 1)", "borderWidth": "2px"}],
-              ["O: Office",{"fillColor": "rgba(23, 20, 31, 0.65)", "borderColor": "rgba(23, 20, 31, 1)", "borderWidth": "2px"}],
-              ["P-C: Planned Community",{"fillColor": "rgba(153, 255, 204, 0.65)", "borderColor": "rgba(153, 255, 204, 1)", "borderWidth": "2px"}],
-              ["P-O: Professional Office",{"fillColor": "rgba(185, 191, 152, 0.65)", "borderColor": "rgba(185, 191, 152, 1)", "borderWidth": "2px"}],
-              ["PD: Planned Development",{"fillColor": "rgba(204, 255, 230, 0.65)", "borderColor": "rgba(204, 255, 230, 1)", "borderWidth": "2px"}],
-              ["R-1: Single Family Residential",{"fillColor": "rgba(148, 164, 166, 0.65)", "borderColor": "rgba(148, 164, 166, 1)", "borderWidth": "2px"}],
-              ["R-2: Medium/Low Density Residential",{"fillColor": "rgba(177, 209, 194, 0.65)", "borderColor": "rgba(177, 209, 194, 1)", "borderWidth": "2px"}],
-              ["R-3: Medium Density Residential",{"fillColor": "rgba(77, 104, 108, 0.65)", "borderColor": "rgba(77, 104, 108, 1)", "borderWidth": "2px"}],
-              ["R-4: High Density Residential",{"fillColor": "rgba(77, 108, 81, 0.65)", "borderColor": "rgba(77, 108, 81, 1)", "borderWidth": "2px"}],
-              ["R-5: Apartments",{"fillColor": "rgba(39, 45, 1, 0.65)", "borderColor": "rgba(39, 45, 1, 1)", "borderWidth": "2px"}],
-              ["R-A: Ranch Acres",{"fillColor": "rgba(232, 234, 233, 0.65)", "borderColor": "rgba(232, 234, 233, 1)", "borderWidth": "2px"}],
-              ["R-CL: Single Family Compact Lot",{"fillColor": "rgba(170, 221, 221, 0.65)", "borderColor": "rgba(170, 221, 221, 1)", "borderWidth": "2px"}],
-              ["R-D: Single Family Residential Restricted",{"fillColor": "rgba(127, 178, 240, 0.65)", "borderColor": "rgba(127, 178, 240, 1)", "borderWidth": "2px"}],
-              ["R-E: Residence Estates",{"fillColor": "rgba(78, 122, 199, 0.65)", "borderColor": "rgba(78, 122, 199, 1)", "borderWidth": "2px"}],
-              ["R-MH: Mobile Home Residence",{"fillColor": "rgba(53, 71, 140, 0.65)", "borderColor": "rgba(53, 71, 140, 1)", "borderWidth": "2px"}],
-              ["R-MHP: Mobile Home Residence Part",{"fillColor": "rgba(22, 25, 59, 0.65)", "borderColor": "rgba(22, 25, 59, 1)", "borderWidth": "2px"}],
-              ["R-PD: Residential Planned Development",{"fillColor": "rgba(80, 48, 54, 0.65)", "borderColor": "rgba(80, 48, 54, 1)", "borderWidth": "2px"}],
-              ["T-D: Traditional Development",{"fillColor": "rgba(127, 101, 96, 0.65)", "borderColor": "rgba(127, 101, 96, 1)", "borderWidth": "2px"}],
-              ["TC: Town Center",{"fillColor": "rgba(191, 177, 164, 0.65)", "borderColor": "rgba(191, 177, 164, 1)", "borderWidth": "2px"}],
-              ["U: Undeveloped",{"fillColor": "rgba(81, 242, 26, 0.65)", "borderColor": "rgba(81, 242, 26, 1)", "borderWidth": "2px"}],
-              ["Other/Unlisted Zones",{"fillColor": "rgba(242, 46, 206, 0.65)", "borderColor": "rgba(242, 46, 206, 1)", "borderWidth": "2px"}]
-            ],
-          "layer_style": {
-              "layer_style_rules": {
-                "function": "var zone = feature.attributes.ZONE;var color = '#f22ece';if (zone == 'C-1') {color = '#dbbeff';} else if (zone == 'C-2') {color = '#cb7aed';} else if (zone == 'C-D') {color = '#b412d6';} else if (zone == 'C-M') {color = '#9a09cf';} else if (zone == 'C-PB') {color = '#b64a82';} else if (zone == 'C-V') {color = '#ffffcc';} else if (zone == 'M') {color = '#eaaa69';} else if (zone == 'N-S') {color = '#f5f5dc';} else if (zone == 'O') {color = '#17141f';} else if (zone == 'P-C') {color = '#99ffcc';} else if (zone == 'P-O') {color = '#b9bf98';} else if (zone == 'P-R') {color = '#b9bf98';} else if (zone == 'PD') {color = '#ccffe6';} else if (zone == 'R-1') {color = '#94a4a6';} else if (zone == 'R-2') {color = '#b1d1c2';} else if (zone == 'R-3') {color = '#4d686c';} else if (zone == 'R-4') {color = '#4d6c51';} else if (zone == 'R-5') {color = '#272d01';} else if (zone == 'R-A') {color = '#e8eae9';} else if (zone == 'R-CL') {color = 'rgb(170, 221, 221)';} else if (zone == 'R-D') {color = '#7fb2f0';} else if (zone == 'R-E') {color = '#4e7ac7';} else if (zone == 'R-MH') {color = '#35478C';} else if (zone == 'R-MHP') {color = '#16193b';} else if (zone.includes('R-PD')) {color = '#503036';} else if (zone == 'T-D') {color = '#7f6560';} else if (zone == 'TC') {color = '#bfb1a4';} else if (zone.includes('U(')) {color = '#51f21a';} return {fillColor: color,fillOpacity: 0.65,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 5};",
-                "parameters": "feature"
-              }             
-          },
-          "toggled": true,
-          "min_zoom": "17",
-          "max_zoom": "30"
-        },
-        {
-          "layer_name": "cip_lmaintenance",
-          "data_source_type": "MapServerGeojson",
-          "data_source": "https://mapdata-lasvegasnevada-gov.appspot.com/services/cip_lmaintenance/geojson",
-          "id_property_field":"OBJECTID",
-          "mapserver_layer_number": "9",          
-          "legend": [
-              ["Sewer Mains", {"lineColor": "black", "lineWidth": "4px"}]
-            ],
-          "toggled": false,
-          "min_zoom": "17",
-          "max_zoom": "30"
-        },
-        {
-          "layer_name": "Neighborhood Areas Mapserver",
-          "data_source_type": "MapServerSingleUrl",
-          "data_source": "http://mapdata.lasvegasnevada.gov/clvgis/rest/services/AdministrativeBoundaries/Parcel_Info/MapServer/2/query?where=1%3D1&outFields=*&outSR=4326&f=json",
-          "id_property_field":"OBJECTID",          
-          "legend": [
-              ["Neighborhood Areas", {"lineColor": "black", "lineWidth": "4px"}]
-            ],
-          "toggled": false,
-          "min_zoom": "10",
-          "max_zoom": "30"
-        },
-        {
-          "layer_name": "Neighborhood Areas geojson",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/ff80011ba1af4fc78d436b7cf9605812_2.geojson",
-          "id_property_field":"OBJECTID", 
-          "layer_style": {
-            "zIndex": 5002,
-            "fillColor":"blue",
-            "fillOpacity": 1,
-            "strokeColor":"grey",
-            "strokeOpacity": 2.0,
-            "strokeWeight": 1
-          },
-          "legend": [
-              ["Neighborhood Areas", {"lineColor": "black", "lineWidth": "4px"}]
-            ],
-          "toggled": false,
-          "min_zoom": "10",
-          "max_zoom": "30"
-        },
-        {
-          "layer_name": "Sewer Mains geojson",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/f5ad99485507440aa0e43bee51ef7d5c_6.geojson",
-          "id_property_field":"OBJECTID",
-          "layer_style": {
-            "zIndex": 5000,
-            "lineColor":"#ffffff",
-            "lineOpacity": 1.0,
-            "lineWeight": 1
-          },
-          "toggled": false
-        },
-        {
-          "layer_name": "Medical Marijuana",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/892309e55f234e92a329d03374608ae3_0.geojson",
-          "id_property_field":"OBJECTID",
-          "layer_style": {
-            "icon": "https://www.emeraldcitypilates.com/favicon.ico"
-          },
-          "legend": [
-              ["Medical Marijuana",{"icon": "https://www.emeraldcitypilates.com/favicon.ico"}]
-            ],
-          "toggled": false
-        },
-        {
-          "layer_name": "Precincts",
-          "data_source": "https://opendata.arcgis.com/datasets/3e738fdaca2b4aeba0c18a2478cae956_0.geojson",
-          "data_source_type": "geojson",
-          "id_property_field":"OBJECTID",
-          "layer_style": {
-            "zIndex": 5000,
-            "fillColor":"black",
-            "fillOpacity": 0,
-            "strokeColor":"black",
-            "strokeOpacity": 1.0,
-            "strokeWeight": 2
-          },
-          "legend": [
-              ["Precincts",{"fillColor": "rgba(0, 0, 0, 0)", "borderColor": "rgba(0, 0, 0, 1)", "borderWidth": "2px"}]
-            ],
-          "toggled": false,
-          "min_zoom": "10",
-          "max_zoom": "30"
-        },
-        {
-          "layer_name": "Planning Cases by Parcel",
-          "data_source": "https://opendata.arcgis.com/datasets/f0b7d04f2e234404bf330ecac5685fc3_0.geojson",
-          "data_source_type": "geojson",
-          "id_property_field":"OBJECTID_1",
-          "layer_style": {
-            "zIndex": 5000,
-            "fillColor":"black",
-            "fillOpacity": 0,
-            "strokeColor":"grey",
-            "strokeOpacity": 1.0,
-            "strokeWeight": 1
-          },
-          "toggled": false
-        },
-        {
-          "layer_name": "Animal Control Beats",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/7c2209fbbafd4fc6aaccbaf3213b5451_0.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "Park Hardscapes",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/6e53b3f63e384269b9714d71870458e0_21.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "City Parks",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/c258a90169ea490eb1abcb029ac4573b_0.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "Through Streets",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/64a16dd208684f4d96bb8b77edcbe6f9_0.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "Environmental Compliance - Class II Permits",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/3c03b34501364516977589543a1e47c2_0.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "Private Parks",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/54366d0ab8f24786b5274498cf92680c_1.geojson",
-          "id_property_field":"OBJECTID_12"
-        },
-        {
-          "layer_name": "Park Structures",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/d87f1a0957124d0888b65a0db9bbb006_18.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "Jurisdictions",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/agol/arcgis/13f35f74589b4bb0b8d9a4de4c444158/0.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "City Limits",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/edfc142e2eac413baee3ed19d73195b5_0.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "City Facilities",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/53385f4e5f2d476ab238c1ec472e15f7_0.geojson",
-          "id_property_field":"OBJECTID"
-        },
-        {
-          "layer_name": "Parking Meter Zones",
-          "data_source_type": "geojson",
-          "data_source": "https://opendata.arcgis.com/datasets/0281be85aee14279ac9e8315ee5051f2_3.geojson",
-          "id_property_field":"OBJECTID",
-          "layer_style": {
-              "layer_style_rules": {
-                "function": "var time = feature.getProperty('TIME_LIMIT');var color = 'black';if (time == 'None') {color = 'green';} else if (time == '4HR') {color = 'orange';} else if (time == '2HR') {color = 'yellow';} else if (time == '10HR') {color = 'blue';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 4,zIndex: 1};",
-                "parameters": "feature"
-              }             
-          },
-          "legend": [
-            ["Parking Meter Zones - No Limit", {"lineColor": "green", "lineWidth": "4px"}],
-            ["Parking Meter Zones - 4HR Limit", {"lineColor": "orange", "lineWidth": "4px"}],
-            ["Parking Meter Zones - 2HR Limit", {"lineColor": "yellow", "lineWidth": "4px"}],
-            ["Parking Meter Zones - 10HR Limit", {"lineColor": "blue", "lineWidth": "4px"}]
-          ]
-        }
-      ]
-    }
-  ]
+	"for": "WebMapLayers",
+	"layer_groups": [{
+			"group_name": "Base Layers",
+			"layers": [{
+					"layer_name": "Wards",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/3b5d399346244c81b97c43514613566e_0.geojson",
+					"id_property_field": "CLV_WARDSOBJECTID",
+					"display_fields": [
+						["WARD_LUTWARD", "Ward Number", "text"],
+						["WARD_LUTNAME", "Ward Councilperson", "text"],
+						["WARD_LUTURL", "Ward URL Link", "link"],
+						["WARD_LUTURLPIC", "Councilperson Image", "image"]
+					],
+					"layer_style": {
+						"layer_style_rules": {
+							"function": "var ward = feature.getProperty('CLV_WARDSWARD');var color = 'black';if (ward == '1') {color = 'yellow';} else if (ward == '2') {color = 'orange';} else if (ward == '3') {color = 'blue';} else if (ward == '4') {color = 'green';} else if (ward == '5') {color = 'grey';} else if (ward == '6') {color = 'rgb(132, 77, 45)';}return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 7};",
+							"parameters": "feature"
+						}
+					},
+					"legend": [
+						["Ward 1", {
+							"fillColor": "rgba(255, 250, 5, 0.5)",
+							"borderColor": "rgba(255, 250, 5, 1)",
+							"borderWidth": "1px"
+						}],
+						["Ward 2", {
+							"fillColor": "rgba(255, 159, 5, 0.5)",
+							"borderColor": "rgba(255, 159, 5, 1)",
+							"borderWidth": "1px"
+						}],
+						["Ward 3", {
+							"fillColor": "rgba(5, 38, 255, 0.5)",
+							"borderColor": "rgba(5, 38, 255, 1)",
+							"borderWidth": "1px"
+						}],
+						["Ward 4", {
+							"fillColor": "rgba(3, 178, 20, 0.5)",
+							"borderColor": "rgba(3, 178, 20, 1)",
+							"borderWidth": "1px"
+						}],
+						["Ward 5", {
+							"fillColor": "rgba(170, 170, 170, 0.5)",
+							"borderColor": "rgba(170, 170, 170, 1)",
+							"borderWidth": "1px"
+						}],
+						["Ward 6", {
+							"fillColor": "rgba(132, 77, 45, 0.5)",
+							"borderColor": "rgba(132, 77, 45, 1)",
+							"borderWidth": "1px"
+						}]
+					],
+					"toggled": true,
+					"min_zoom": "10",
+					"max_zoom": "20"
+				},
+				{
+					"layer_name": "Parcels",
+					"data_source_type": "parcels",
+					"legend": [
+						["Parcels", {
+							"fillColor": "rgba(255, 250, 5, 0)",
+							"borderColor": "rgba(22, 239, 255, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "18",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Zoning",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/DevelopmentServices/Zoning/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "0",
+					"display_fields": [
+						["ZONE", "Zone", "text"],
+						["PARCEL", "Parcel", "text"],
+						["PARENTPCL", "Parent Parcel", "text"],
+						["DESCRIPTION", "Description", "text"],
+						["Label_Class", "Class", "text"]
+					],
+					"legend": [
+						["C-1: Limited Commercial", {
+							"fillColor": "rgba(219, 190, 255, 0.65)",
+							"borderColor": "rgba(219, 190, 255, 1)",
+							"borderWidth": "2px"
+						}],
+						["C-2: General Commercial", {
+							"fillColor": "rgba(203, 122, 237, 0.65)",
+							"borderColor": "rgba(203, 122, 237, 1)",
+							"borderWidth": "2px"
+						}],
+						["C-D: Designed Commercial", {
+							"fillColor": "rgba(180, 18, 214, 0.65)",
+							"borderColor": "rgba(180, 18, 214, 1)",
+							"borderWidth": "2px"
+						}],
+						["C-M: Commercial/Industrial", {
+							"fillColor": "rgba(154, 9, 207, 0.65)",
+							"borderColor": "rgba(154, 9, 207, 1)",
+							"borderWidth": "2px"
+						}],
+						["C-PB: Planned Business Park", {
+							"fillColor": "rgba(182, 74, 130, 0.65)",
+							"borderColor": "rgba(182, 74, 130, 1)",
+							"borderWidth": "2px"
+						}],
+						["C-V: Civic", {
+							"fillColor": "rgba(255, 255, 204, 0.65)",
+							"borderColor": "rgba(255, 255, 204, 1)",
+							"borderWidth": "2px"
+						}],
+						["M: Industrial", {
+							"fillColor": "rgba(234, 170, 105, 0.65)",
+							"borderColor": "rgba(234, 170, 105, 1)",
+							"borderWidth": "2px"
+						}],
+						["N-S: Neighborhood Service", {
+							"fillColor": "rgba(245, 245, 220, 0.65)",
+							"borderColor": "rgba(245, 245, 220, 1)",
+							"borderWidth": "2px"
+						}],
+						["O: Office", {
+							"fillColor": "rgba(23, 20, 31, 0.65)",
+							"borderColor": "rgba(23, 20, 31, 1)",
+							"borderWidth": "2px"
+						}],
+						["P-C: Planned Community", {
+							"fillColor": "rgba(153, 255, 204, 0.65)",
+							"borderColor": "rgba(153, 255, 204, 1)",
+							"borderWidth": "2px"
+						}],
+						["P-O: Professional Office", {
+							"fillColor": "rgba(185, 191, 152, 0.65)",
+							"borderColor": "rgba(185, 191, 152, 1)",
+							"borderWidth": "2px"
+						}],
+						["PD: Planned Development", {
+							"fillColor": "rgba(204, 255, 230, 0.65)",
+							"borderColor": "rgba(204, 255, 230, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-1: Single Family Residential", {
+							"fillColor": "rgba(148, 164, 166, 0.65)",
+							"borderColor": "rgba(148, 164, 166, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-2: Medium/Low Density Residential", {
+							"fillColor": "rgba(177, 209, 194, 0.65)",
+							"borderColor": "rgba(177, 209, 194, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-3: Medium Density Residential", {
+							"fillColor": "rgba(77, 104, 108, 0.65)",
+							"borderColor": "rgba(77, 104, 108, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-4: High Density Residential", {
+							"fillColor": "rgba(77, 108, 81, 0.65)",
+							"borderColor": "rgba(77, 108, 81, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-5: Apartments", {
+							"fillColor": "rgba(39, 45, 1, 0.65)",
+							"borderColor": "rgba(39, 45, 1, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-A: Ranch Acres", {
+							"fillColor": "rgba(232, 234, 233, 0.65)",
+							"borderColor": "rgba(232, 234, 233, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-CL: Single Family Compact Lot", {
+							"fillColor": "rgba(170, 221, 221, 0.65)",
+							"borderColor": "rgba(170, 221, 221, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-D: Single Family Residential Restricted", {
+							"fillColor": "rgba(127, 178, 240, 0.65)",
+							"borderColor": "rgba(127, 178, 240, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-E: Residence Estates", {
+							"fillColor": "rgba(78, 122, 199, 0.65)",
+							"borderColor": "rgba(78, 122, 199, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-MH: Mobile Home Residence", {
+							"fillColor": "rgba(53, 71, 140, 0.65)",
+							"borderColor": "rgba(53, 71, 140, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-MHP: Mobile Home Residence Part", {
+							"fillColor": "rgba(22, 25, 59, 0.65)",
+							"borderColor": "rgba(22, 25, 59, 1)",
+							"borderWidth": "2px"
+						}],
+						["R-PD: Residential Planned Development", {
+							"fillColor": "rgba(80, 48, 54, 0.65)",
+							"borderColor": "rgba(80, 48, 54, 1)",
+							"borderWidth": "2px"
+						}],
+						["T-D: Traditional Development", {
+							"fillColor": "rgba(127, 101, 96, 0.65)",
+							"borderColor": "rgba(127, 101, 96, 1)",
+							"borderWidth": "2px"
+						}],
+						["TC: Town Center", {
+							"fillColor": "rgba(191, 177, 164, 0.65)",
+							"borderColor": "rgba(191, 177, 164, 1)",
+							"borderWidth": "2px"
+						}],
+						["U: Undeveloped", {
+							"fillColor": "rgba(81, 242, 26, 0.65)",
+							"borderColor": "rgba(81, 242, 26, 1)",
+							"borderWidth": "2px"
+						}],
+						["Other/Unlisted Zones", {
+							"fillColor": "rgba(242, 46, 206, 0.65)",
+							"borderColor": "rgba(242, 46, 206, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"layer_style": {
+						"layer_style_rules": {
+							"function": "var zone = feature.attributes.ZONE;var color = '#f22ece';if (zone == 'C-1') {color = '#dbbeff';} else if (zone == 'C-2') {color = '#cb7aed';} else if (zone == 'C-D') {color = '#b412d6';} else if (zone == 'C-M') {color = '#9a09cf';} else if (zone == 'C-PB') {color = '#b64a82';} else if (zone == 'C-V') {color = '#ffffcc';} else if (zone == 'M') {color = '#eaaa69';} else if (zone == 'N-S') {color = '#f5f5dc';} else if (zone == 'O') {color = '#17141f';} else if (zone == 'P-C') {color = '#99ffcc';} else if (zone == 'P-O') {color = '#b9bf98';} else if (zone == 'P-R') {color = '#b9bf98';} else if (zone == 'PD') {color = '#ccffe6';} else if (zone == 'R-1') {color = '#94a4a6';} else if (zone == 'R-2') {color = '#b1d1c2';} else if (zone == 'R-3') {color = '#4d686c';} else if (zone == 'R-4') {color = '#4d6c51';} else if (zone == 'R-5') {color = '#272d01';} else if (zone == 'R-A') {color = '#e8eae9';} else if (zone == 'R-CL') {color = 'rgb(170, 221, 221)';} else if (zone == 'R-D') {color = '#7fb2f0';} else if (zone == 'R-E') {color = '#4e7ac7';} else if (zone == 'R-MH') {color = '#35478C';} else if (zone == 'R-MHP') {color = '#16193b';} else if (zone.includes('R-PD')) {color = '#503036';} else if (zone == 'T-D') {color = '#7f6560';} else if (zone == 'TC') {color = '#bfb1a4';} else if (zone.includes('U(')) {color = '#51f21a';} return {fillColor: color,fillOpacity: 0.65,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 120};",
+							"parameters": "feature"
+						}
+					},
+					"toggled": true,
+					"min_zoom": "17",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Jurisdictions",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/agol/arcgis/13f35f74589b4bb0b8d9a4de4c444158/0.geojson",
+					"id_property_field": "OBJECTID",
+					"toggled": false,
+					"min_zoom": "6",
+					"max_zoom": "18",
+					"layer_style": {
+						"layer_style_rules": {
+							"function": "var city = feature.getProperty('NAME');var color = 'black'; var opacity = .5; if (city === 'City of North Las Vegas') {color = '#E37B40';} else if (city === 'Nellis AFB') {color = '#46B29D';} else if (city === 'City of Mesquite') {color = '#DE5B49';} else if (city === 'City of Las Vegas') {color = '#324D5C';} else if (city === 'City of Henderson') {color = '#F0CA4D';} else if (city === 'Boulder City') {color = '#56345C';} else {opacity = 0;} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 2,zIndex: 5};",
+							"parameters": "feature"
+						}
+					},
+					"legend": [
+						["North Las Vegas", {
+							"fillColor": "rgba(227, 123, 64, 0.5)",
+							"borderColor": "rgba(227, 123, 64, 1)",
+							"borderWidth": "2px"
+						}],
+						["Nellis AFB", {
+							"fillColor": "rgba(70, 178, 157, 0.5)",
+							"borderColor": "rgba(70, 178, 157, 1)",
+							"borderWidth": "2px"
+						}],
+						["Mesquite", {
+							"fillColor": "rgba(222, 91, 73, 0.5)",
+							"borderColor": "rgba(222, 91, 73, 1)",
+							"borderWidth": "2px"
+						}],
+						["Las Vegas", {
+							"fillColor": "rgba(50, 77, 92, 0.5)",
+							"borderColor": "rgba(50, 77, 92, 1)",
+							"borderWidth": "2px"
+						}],
+						["Henderson", {
+							"fillColor": "rgba(240, 202, 77, 0.5)",
+							"borderColor": "rgba(240, 202, 77, 1)",
+							"borderWidth": "2px"
+						}],
+						["Boulder City", {
+							"fillColor": "rgba(86, 52, 92, 0.5)",
+							"borderColor": "rgba(86, 52, 92, 1)",
+							"borderWidth": "2px"
+						}]
+					]
+				},
+				{
+					"layer_name": "City Limits",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/edfc142e2eac413baee3ed19d73195b5_0.geojson",
+					"id_property_field": "OBJECTID",
+					"toggled": false,
+					"min_zoom": "6",
+					"max_zoom": "18",
+					"layer_style": {
+						"zIndex": 2,
+						"fillColor": "#50B242",
+						"fillOpacity": 0.2,
+						"strokeColor": "#50B242",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 4
+					},
+					"legend": [
+						["City Limits", {
+							"fillColor": "rgba(80, 178, 66, 0.2)",
+							"borderColor": "rgba(80, 178, 66, 1)",
+							"borderWidth": "4px"
+						}]
+					]
+				}
+			]
+		},
+		{
+			"group_name": "Administrative Boundaries",
+			"layers": [
+				{
+					"layer_name": "Precincts",
+					"data_source": "https://opendata.arcgis.com/datasets/3e738fdaca2b4aeba0c18a2478cae956_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 54,
+						"fillColor": "black",
+						"fillOpacity": 0,
+						"strokeColor": "black",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Precincts", {
+							"fillColor": "rgba(0, 0, 0, 0)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Zip Codes",
+					"data_source": "https://opendata.arcgis.com/datasets/ca96b3644d23497da2c0cb637b059d0e_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 55,
+						"fillColor": "red",
+						"fillOpacity": 0,
+						"strokeColor": "red",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 3
+					},
+					"legend": [
+						["Zip Codes", {
+							"fillColor": "rgba(0, 0, 0, 0)",
+							"borderColor": "rgba(255, 33, 24, 1)",
+							"borderWidth": "3px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Map Index",
+					"data_source": "https://opendata.arcgis.com/datasets/ff80011ba1af4fc78d436b7cf9605812_1.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 54,
+						"fillColor": "black",
+						"fillOpacity": 0,
+						"strokeColor": "black",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Map Index", {
+							"fillColor": "rgba(0, 0, 0, 0)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Code Enforcement Areas",
+					"data_source": "https://opendata.arcgis.com/datasets/ff80011ba1af4fc78d436b7cf9605812_4.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#33385C",
+						"fillOpacity": 0.2,
+						"strokeColor": "#33385C",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Code Enforcement Areas", {
+							"fillColor": "rgba(51, 56, 92, 0.2)",
+							"borderColor": "rgba(51, 56, 92, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Construction Inspector Areas",
+					"data_source": "https://opendata.arcgis.com/datasets/4d13b4e2737548f4b873a10e1242282a_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#7A2C33",
+						"fillOpacity": 0.2,
+						"strokeColor": "#7A2C33",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Construction Inspector Areas", {
+							"fillColor": "rgba(122, 44, 51, 0.2)",
+							"borderColor": "rgba(122, 44, 51, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Sewer Billing Inspector Areas",
+					"data_source": "https://opendata.arcgis.com/datasets/4d13b4e2737548f4b873a10e1242282a_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#000000",
+						"fillOpacity": 0.2,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Sewer Billing Inspector Areas", {
+							"fillColor": "rgba(0, 0, 0, 0.2)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				}
+			]
+		},
+		{
+			"group_name": "Cultural",
+			"layers": [
+				{					
+					"layer_name": "Las Vegas Arts District",
+					"data_source": "https://opendata.arcgis.com/datasets/2bb79daaa5b5428c9162757592335220_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#65DED7",
+						"fillOpacity": 0.5,
+						"strokeColor": "#65DED7",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Las Vegas Arts District", {
+							"fillColor": "rgba(101, 222, 215, 0.5)",
+							"borderColor": "rgba(101, 222, 215, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				}
+			]
+		}
+	]
 }
