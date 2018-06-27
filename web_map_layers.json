@@ -1184,7 +1184,7 @@
 							"borderWidth": "1px"
 						}]
 					],
-					"toggled": true,
+					"toggled": false,
 					"min_zoom": "10",
 					"max_zoom": "20"
 				},
