@@ -465,7 +465,7 @@
 					"data_source_type": "geojson",
 					"id_property_field": "OBJECTID",
 					"layer_style": {
-						"zIndex": 53,
+						"zIndex": 58,
 						"fillColor": "#65DED7",
 						"fillOpacity": 0.5,
 						"strokeColor": "#65DED7",
@@ -489,7 +489,7 @@
 					"data_source_type": "geojson",
 					"id_property_field": "OBJECTID",
 					"layer_style": {
-						"zIndex": 53,
+						"zIndex": 59,
 						"fillColor": "#65DED7",
 						"fillOpacity": 0.5,
 						"strokeColor": "#65DED7",
@@ -533,6 +533,54 @@
 		{
 			"group_name": "Community Services",
 			"layers": [
+				{					
+					"layer_name": "Parks",
+					"data_source": "https://opendata.arcgis.com/datasets/c258a90169ea490eb1abcb029ac4573b_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 57,
+						"fillColor": "#38F708",
+						"fillOpacity": 0.5,
+						"strokeColor": "#38F708",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Parks", {
+							"fillColor": "rgba(56, 247, 8, 0.5)",
+							"borderColor": "rgba(56, 247, 8, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Private Parks",
+					"data_source": "https://opendata.arcgis.com/datasets/54366d0ab8f24786b5274498cf92680c_1.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID_12",
+					"layer_style": {
+						"zIndex": 57,
+						"fillColor": "#47EB73",
+						"fillOpacity": 0.5,
+						"strokeColor": "#47EB73",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Private Parks", {
+							"fillColor": "rgba(71, 235, 115, 0.5)",
+							"borderColor": "rgba(71, 235, 115, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
 				{					
 					"layer_name": "Unregistered HOAs",
 					"data_source": "https://opendata.arcgis.com/datasets/0629d6512c0d425badf2bd1a366aa41d_1.geojson",
@@ -735,14 +783,14 @@
 					"layer_style": {
 						"zIndex": 54,
 						"fillColor": "#A30700",
-						"fillOpacity": 0,
+						"fillOpacity": 0.5,
 						"strokeColor": "#A30700",
 						"strokeOpacity": 1.0,
 						"strokeWeight": 2
 					},
 					"legend": [
 						["Master Planned Communities", {
-							"fillColor": "rgba(163, 8, 0, 0)",
+							"fillColor": "rgba(163, 8, 0, 0.5)",
 							"borderColor": "rgba(163, 8, 0, 1)",
 							"borderWidth": "2px"
 						}]
@@ -777,6 +825,439 @@
 					"max_zoom": "30"
 				}
 			]
-		}	
+		},
+		{
+			"group_name": "Existing Infrastructure",
+			"layers": [
+				{					
+					"layer_name": "Privately Maintained Sewer Lines",
+					"data_source": "https://opendata.arcgis.com/datasets/2aa739da08154060980105847e6297ee_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"icon": "/static/img/map_icons/redDot.png"
+					},
+					"legend": [
+						["Privately Maintained Sewer Lines",{"icon": "/static/img/map_icons/redDot.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Flood Zones - 100yr",
+					"data_source": "https://opendata.arcgis.com/datasets/70e22b80719d41c880b5283163ea1c86_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 54,
+						"fillColor": "#1D2196",
+						"fillOpacity": 0.7,
+						"strokeColor": "#1D2196",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Flood Zones - 100yr", {
+							"fillColor": "rgba(29, 33, 150, 0.7)",
+							"borderColor": "rgba(29, 33, 150, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				}
+			]
+		},
+		{
+			"group_name": "Public Safety",
+			"layers": [
+				{					
+					"layer_name": "Fire Stations",
+					"data_source": "https://opendata.arcgis.com/datasets/271cd6bc8f4c43d9b53c54312db42ab8_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"icon": "/static/img/map_icons/redDot.png"
+					},
+					"legend": [
+						["Fire Stations",{"icon": "/static/img/map_icons/redDot.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Hospitals",
+					"data_source": "https://opendata.arcgis.com/datasets/70e22b80719d41c880b5283163ea1c86_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "FID",
+					"layer_style": {
+						"zIndex": 56,
+						"fillColor": "#3138FF",
+						"fillOpacity": 0.9,
+						"strokeColor": "#3138FF",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Hospitals", {
+							"fillColor": "rgba(49, 56, 255, 0.9)",
+							"borderColor": "rgba(49, 56, 255, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "LVMPD Area Commands",
+					"data_source": "https://opendata.arcgis.com/datasets/0e2dc8298b5e4b37ba6816c99a4718fd_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 54,
+						"fillColor": "#000000",
+						"fillOpacity": 0,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["LVMPD Area Commands", {
+							"fillColor": "rgba(0, 0, 0, 0)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "LVMPD Sector Beats",
+					"data_source": "https://opendata.arcgis.com/datasets/a7d8cca9290f402cae432413b64403d7_2.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#F0CA4D",
+						"fillOpacity": 0.5,
+						"strokeColor": "#F0CA4D",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["LVMPD Sector Beats", {
+							"fillColor": "rgba(240, 202, 77, 0.5)",
+							"borderColor": "rgba(240, 202, 77, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "LVMPD Marshal Beats",
+					"data_source": "https://opendata.arcgis.com/datasets/6368cddd897b48749741312b06d2445f_3.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#E37B40",
+						"fillOpacity": 0.5,
+						"strokeColor": "#E37B40",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["LVMPD Marshal Beats", {
+							"fillColor": "rgba(227, 123, 64, 0.5)",
+							"borderColor": "rgba(227, 123, 64, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{
+					"layer_name": "Phantoms",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublicSafety/Phantoms/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "1",
+					"layer_style": {
+						"zIndex": 55,
+						"fillColor": "#A30700",
+						"fillOpacity": 0.2,
+						"strokeColor": "#A30700",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Phantoms", {
+							"fillColor": "rgba(163, 77, 0, 0.2)",
+							"borderColor": "rgba(163, 77, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "16",
+					"max_zoom": "30"
+				}
+			]
+		},
+		{
+			"group_name": "Transportation",
+			"layers": [
+				{
+					"layer_name": "Freeways and Highways",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/d922d87ab66e4a72bf90645f0dac4907_0.geojson",
+					"id_property_field":"OBJECTID",
+					"layer_style": {
+						"zIndex": 200,
+						"lineColor":"#000000",
+						"lineOpacity": 1.0,
+						"lineWeight": 4
+					},
+					"legend": [
+						["Freeways and Highways", {"lineColor": "black", "lineWidth": "4px"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Through Streets",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/64a16dd208684f4d96bb8b77edcbe6f9_0.geojson",
+					"id_property_field":"OBJECTID",
+					"layer_style": {
+						"zIndex": 201,
+						"lineColor":"#A3A3A3",
+						"lineOpacity": 1.0,
+						"lineWeight": 3
+					},
+					"legend": [
+						["Through Streets", {"lineColor": "grey", "lineWidth": "3px"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Downtown Loop Route",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/8b0f42a9048644f896f368a7cadc001f_0.geojson",
+					"id_property_field":"OBJECTID",
+					"layer_style": {
+						"zIndex": 251,
+						"lineColor":"pink",
+						"lineOpacity": 1.0,
+						"lineWeight": 4
+					},
+					"legend": [
+						["Through Streets", {"lineColor": "pink", "lineWidth": "4px"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{					
+					"layer_name": "Downtown Loop Stops",
+					"data_source": "https://opendata.arcgis.com/datasets/f539ea3496b34c93a538363f9879fdc3_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"icon": "/static/img/map_icons/busStopIcon.png"
+					},
+					"legend": [
+						["Downtown Loop Stops",{"icon": "/static/img/map_icons/busStopIcon.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{
+				    "layer_name": "Parking Meter Zones",
+				    "data_source_type": "geojson",
+				    "data_source": "https://opendata.arcgis.com/datasets/0281be85aee14279ac9e8315ee5051f2_3.geojson",
+					"id_property_field":"OBJECTID",
+					"layer_style": {
+						"layer_style_rules": {
+							"function": "var time = feature.getProperty('TIME_LIMIT');var color = 'black';if (time == 'None') {color = 'green';} else if (time == '4HR') {color = 'orange';} else if (time == '2HR') {color = 'yellow';} else if (time == '10HR') {color = 'blue';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 4,zIndex: 1};",
+							"parameters": "feature"
+						 }             
+					},
+					"legend": [
+						["Parking Meter Zones - No Limit", {"lineColor": "green", "lineWidth": "4px"}],
+						["Parking Meter Zones - 4HR Limit", {"lineColor": "orange", "lineWidth": "4px"}],
+						["Parking Meter Zones - 2HR Limit", {"lineColor": "yellow", "lineWidth": "4px"}],
+						["Parking Meter Zones - 10HR Limit", {"lineColor": "blue", "lineWidth": "4px"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"	
+				},
+				{
+					"layer_name": "Maintenance Districts",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/9cd9c4a8f0d24f1eb54574c54aad9f35_0.geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 55,
+						"fillColor": "#000000",
+						"fillOpacity": 0.3,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Maintenance Districts", {
+							"fillColor": "rgba(0, 0, 0, 0.3)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "One Way Streets",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/2740bc9d4b8442cc9c94834baa75531b_1.geojson",
+					"id_property_field":"OBJECTID",
+					"layer_style": {
+						"zIndex": 255,
+						"lineColor":"blue",
+						"lineOpacity": 1.0,
+						"lineWeight": 3
+					},
+					"legend": [
+						["One Way Streets", {"lineColor": "blue", "lineWidth": "3px"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{					
+					"layer_name": "RTC Bus Stops",
+					"data_source": "https://opendata.arcgis.com/datasets/52ec5d8bb52a4d5ab1c40018f00203c1_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"icon": "/static/img/map_icons/busStopIcon.png"
+					},
+					"legend": [
+						["RTC Bus Stops",{"icon": "/static/img/map_icons/busStopIcon.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{
+					"layer_name": "Public Accessible Parking",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/504d1cde2359430e90ae7a4c1caad773_3.geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"layer_style_rules": {
+							"function": "var yn = feature.getProperty('Public Parking Allowed?');var color = 'black';if (yn === 'NO') {color = '#A3A3A3';} else if (yn === 'YES') {color = '#252AC2';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 56};",
+							"parameters": "feature"
+						}
+					},
+					"legend": [
+						["Public Parking", {
+							"fillColor": "rgba(255, 250, 5, 0.5)",
+							"borderColor": "rgba(255, 250, 5, 1)",
+							"borderWidth": "1px"
+						}],
+						["No Public Parking", {
+							"fillColor": "rgba(163, 163, 163, 0.5)",
+							"borderColor": "rgba(37, 42, 194, 1)",
+							"borderWidth": "1px"
+						}]
+					],
+					"toggled": true,
+					"min_zoom": "10",
+					"max_zoom": "20"
+				},
+				{
+					"layer_name": "All Truck Routes",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/3a5b755282ab4a07b2e6832fc11f58fd_2.geojson",
+					"id_property_field":"OBJECTID",
+					"layer_style": {
+						"zIndex": 255,
+						"lineColor":"orange",
+						"lineOpacity": 1.0,
+						"lineWeight": 3
+					},
+					"legend": [
+						["All Truck Routes", {"lineColor": "orange", "lineWidth": "3px"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Regular Speed Limits",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/1c82211c596849509eea76573dee3863_1.geojson",
+					"id_property_field":"OBJECTID",
+					"layer_style": {
+						"zIndex": 255,
+						"lineColor":"green",
+						"lineOpacity": 1.0,
+						"lineWeight": 3
+					},
+					"legend": [
+						["Regular Speed Limits", {"lineColor": "green", "lineWidth": "3px"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Special Speed Limits",
+					"data_source_type": "geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/3b2003532b854b22b5694ce93d59ee60_0.geojson",
+					"id_property_field":"OBJECTID",
+					"layer_style": {
+						"zIndex": 255,
+						"lineColor":"yellow",
+						"lineOpacity": 1.0,
+						"lineWeight": 3
+					},
+					"legend": [
+						["Special Speed Limits", {"lineColor": "yellow", "lineWidth": "3px"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{					
+					"layer_name": "Traffic Signals",
+					"data_source": "https://opendata.arcgis.com/datasets/52ec5d8bb52a4d5ab1c40018f00203c1_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"icon": "/static/img/map_icons/trafficLightIcon.png"
+					},
+					"legend": [
+						["Traffic Signals",{"icon": "/static/img/map_icons/trafficLightIcon.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				}
+			]
+		}
 	]
 }
