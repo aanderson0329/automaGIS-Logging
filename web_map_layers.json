@@ -608,7 +608,7 @@
 					"data_source_type": "geojson",
 					"id_property_field": "OBJECTID",
 					"layer_style": {
-						"zIndex": 53,
+						"zIndex": 55,
 						"fillColor": "#3F25F7",
 						"fillOpacity": 0.5,
 						"strokeColor": "#3F25F7",
@@ -627,6 +627,156 @@
 					"max_zoom": "30"				
 				}
 			]
-		}
+		},
+		{
+			"group_name": "Community Services",
+			"layers": [
+				{					
+					"layer_name": "Outside City Limits",
+					"data_source": "https://opendata.arcgis.com/datasets/6d6527e95f1e45959b58b4a4b3a60504_12.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 1,
+						"fillColor": "#000000",
+						"fillOpacity": 0.5,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Outside City Limits", {
+							"fillColor": "rgba(0, 0, 0, 0.5)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Downtown Master Plan Districts",
+					"data_source": "https://opendata.arcgis.com/datasets/89540001c0fe40469fa03baa465e4311_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID_1",
+					"layer_style": {
+						"zIndex": 55,
+						"fillColor": "#000000",
+						"fillOpacity": 0.5,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Downtown Master Plan Districts", {
+							"fillColor": "rgba(0, 0, 0, 0.5)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Township and Range Index",
+					"data_source": "https://opendata.arcgis.com/datasets/2f090cf16e014949ab4348edf3ca3e8d_18.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 51,
+						"fillColor": "#000000",
+						"fillOpacity": 0,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Township and Range Index", {
+							"fillColor": "rgba(0, 0, 0, 0)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Annexations",
+					"data_source": "https://opendata.arcgis.com/datasets/680adee9b0c04668800fcfdea4fe1193_19.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 52,
+						"fillColor": "#1B08A3",
+						"fillOpacity": 0,
+						"strokeColor": "#1B08A3",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Annexations", {
+							"fillColor": "rgba(27, 8, 163, 0)",
+							"borderColor": "rgba(27, 8, 163, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Master Planned Communities",
+					"data_source": "https://opendata.arcgis.com/datasets/e6149a2c06ee49fd84c50f1ee9ec322a_5.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 54,
+						"fillColor": "#A30700",
+						"fillOpacity": 0,
+						"strokeColor": "#A30700",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Master Planned Communities", {
+							"fillColor": "rgba(163, 8, 0, 0)",
+							"borderColor": "rgba(163, 8, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{
+					"layer_name": "Building Footprints",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/DevelopmentServices/BuildingFootprints/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "0",
+					"layer_style": {
+						"zIndex": 125,
+						"fillColor": "#000000",
+						"fillOpacity": 0.7,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Building Footprints", {
+							"fillColor": "rgba(0, 0, 0, 0.7)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "17",
+					"max_zoom": "30"
+				}
+			]
+		}	
 	]
 }
