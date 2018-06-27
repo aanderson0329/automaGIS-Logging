@@ -1168,7 +1168,7 @@
 					"id_property_field": "OBJECTID",
 					"layer_style": {
 						"layer_style_rules": {
-							"function": "var yn = feature.getProperty('PUB_PKG');var color = 'black';if (yn === 'NO') {color = '#A3A3A3';} else if (yn === 'YES') {color = '#252AC2';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 56};",
+							"function": "var yn = feature.getProperty('PUB_PKG');var color = 'black';if (yn === 'NO') {color = 'black';} else if (yn === 'YES') {color = 'green';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 1,zIndex: 56};",
 							"parameters": "feature"
 						}
 					},
