@@ -65,7 +65,7 @@
 							"borderWidth": "2px"
 						}]
 					],
-					"toggled": false,
+					"toggled": true,
 					"min_zoom": "18",
 					"max_zoom": "30"
 				},
@@ -230,7 +230,7 @@
 							"parameters": "feature"
 						}
 					},
-					"toggled": true,
+					"toggled": false,
 					"min_zoom": "17",
 					"max_zoom": "30"
 				},
