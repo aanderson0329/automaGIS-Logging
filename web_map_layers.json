@@ -65,7 +65,7 @@
 							"borderWidth": "2px"
 						}]
 					],
-					"toggled": true,
+					"toggled": false,
 					"min_zoom": "18",
 					"max_zoom": "30"
 				},
@@ -831,7 +831,7 @@
 			"layers": [
 				{					
 					"layer_name": "Privately Maintained Sewer Lines",
-					"data_source": "https://opendata.arcgis.com/datasets/2aa739da08154060980105847e6297ee_0.geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/db97bd37be0544819d10b4b34e4c2c1c_3.geojson",
 					"data_source_type": "geojson",
 					"id_property_field": "OBJECTID",
 					"layer_style": {
@@ -890,7 +890,7 @@
 				},
 				{					
 					"layer_name": "Hospitals",
-					"data_source": "https://opendata.arcgis.com/datasets/70e22b80719d41c880b5283163ea1c86_0.geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/35aa71bd1afa4b5280d2df51f67f4cbd_0.geojson",
 					"data_source_type": "geojson",
 					"id_property_field": "FID",
 					"layer_style": {
@@ -1160,7 +1160,7 @@
 						["RTC Bus Stops",{"icon": "/static/img/map_icons/busStopIcon.png"}]
 					],
 					"toggled": false,
-					"min_zoom": "10",
+					"min_zoom": "14",
 					"max_zoom": "30"				
 				},
 				{
@@ -1256,7 +1256,7 @@
 						["Traffic Signals",{"icon": "/static/img/map_icons/trafficLightIcon.png"}]
 					],
 					"toggled": false,
-					"min_zoom": "10",
+					"min_zoom": "14",
 					"max_zoom": "30"				
 				}
 			]
