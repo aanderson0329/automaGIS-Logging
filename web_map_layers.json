@@ -513,10 +513,10 @@
 					"data_source_type": "geojson",
 					"id_property_field": "OBJECTID",
 					"layer_style": {
-						"icon": "/static/img/map_icons/blueDot.png"
+						"icon": "/static/img/map_icons/blackDot.png"
 					},
 					"legend": [
-						["Cultural Historic Art",{"icon": "/static/img/map_icons/blueDot.png"}]
+						["Cultural Historic Art",{"icon": "/static/img/map_icons/blackDot.png"}]
 					],
 					"toggled": false,
 					"min_zoom": "10",
@@ -534,7 +534,7 @@
 			"group_name": "Community Services",
 			"layers": [
 				{					
-					"layer_name": "Unregistered HOA's",
+					"layer_name": "Unregistered HOAs",
 					"data_source": "https://opendata.arcgis.com/datasets/0629d6512c0d425badf2bd1a366aa41d_1.geojson",
 					"data_source_type": "geojson",
 					"id_property_field": "OBJECTID",
