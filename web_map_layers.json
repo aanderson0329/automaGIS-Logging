@@ -526,7 +526,7 @@
 						["DESCRIPTION", "Description", "text"],
 						["PIC_URL", "Picture URL", "link"],
 						["THUMB_URL", "Image", "image"]
-					],
+					]
 				}
 			]
 		}
