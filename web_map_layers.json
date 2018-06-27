@@ -547,7 +547,7 @@
 						"strokeWeight": 2
 					},
 					"legend": [
-						["Unregistered HOA's", {
+						["Unregistered HOAs", {
 							"fillColor": "rgba(0, 0, 0, 0.5)",
 							"borderColor": "rgba(0, 0, 0, 1)",
 							"borderWidth": "2px"
