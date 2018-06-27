@@ -1246,7 +1246,7 @@
 				},
 				{					
 					"layer_name": "Traffic Signals",
-					"data_source": "https://opendata.arcgis.com/datasets/52ec5d8bb52a4d5ab1c40018f00203c1_0.geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/97872c7707444dc5bd3347ff305b73bc_0.geojson",
 					"data_source_type": "geojson",
 					"id_property_field": "OBJECTID",
 					"layer_style": {
