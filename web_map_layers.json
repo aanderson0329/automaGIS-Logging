@@ -497,7 +497,7 @@
 						"strokeWeight": 2
 					},
 					"legend": [
-						["Las Vegas Arts District", {
+						["Historic Areas", {
 							"fillColor": "rgba(101, 222, 215, 0.5)",
 							"borderColor": "rgba(101, 222, 215, 1)",
 							"borderWidth": "2px"
@@ -506,6 +506,27 @@
 					"toggled": false,
 					"min_zoom": "10",
 					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Cultural Historic Art",
+					"data_source": "https://opendata.arcgis.com/datasets/c260e48798cd4e6c8dbe90b101d4325a_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"icon": "/static/img/map_icons/blueDot.png"
+					},
+					"legend": [
+						["Cultural Historic Art",{"icon": "/static/img/map_icons/blueDot.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30",
+					"display_fields": [
+						["NAME", "Name", "text"],
+						["DESCRIPTION", "Description", "text"],
+						["PIC_URL", "Picture URL", "link"],
+						["THUMB_URL", "Image", "image"]
+					],
 				}
 			]
 		}
