@@ -529,6 +529,104 @@
 					]
 				}
 			]
+		},
+		{
+			"group_name": "Community Services",
+			"layers": [
+				{					
+					"layer_name": "Unregistered HOA's",
+					"data_source": "https://opendata.arcgis.com/datasets/0629d6512c0d425badf2bd1a366aa41d_1.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#000000",
+						"fillOpacity": 0.5,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Unregistered HOA's", {
+							"fillColor": "rgba(0, 0, 0, 0.5)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Charter Schools",
+					"data_source": "https://opendata.arcgis.com/datasets/8f6c283c66a0441eab65b56b6f5d208b_2.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "ObjectID",
+					"layer_style": {
+						"icon": "/static/img/map_icons/greenDot.png"
+					},
+					"legend": [
+						["Charter Schools",{"icon": "/static/img/map_icons/greenDot.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Private Schools",
+					"data_source": "https://opendata.arcgis.com/datasets/8f6c283c66a0441eab65b56b6f5d208b_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID_12",
+					"layer_style": {
+						"icon": "/static/img/map_icons/redDot.png"
+					},
+					"legend": [
+						["Private Schools",{"icon": "/static/img/map_icons/redDot.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "Polling Locations",
+					"data_source": "https://opendata.arcgis.com/datasets/2aa739da08154060980105847e6297ee_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "ObjectID",
+					"layer_style": {
+						"icon": "/static/img/map_icons/lightBlueStar.png"
+					},
+					"legend": [
+						["Polling Locations",{"icon": "/static/img/map_icons/lightBlueStar.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				},
+				{					
+					"layer_name": "City Facilities",
+					"data_source": "https://opendata.arcgis.com/datasets/53385f4e5f2d476ab238c1ec472e15f7_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID",
+					"layer_style": {
+						"zIndex": 53,
+						"fillColor": "#3F25F7",
+						"fillOpacity": 0.5,
+						"strokeColor": "#3F25F7",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["City Facilities", {
+							"fillColor": "rgba(63, 37, 247, 0.5)",
+							"borderColor": "rgba(63, 37, 247, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"				
+				}
+			]
 		}
 	]
 }
