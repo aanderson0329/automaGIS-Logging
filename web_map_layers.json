@@ -65,8 +65,8 @@
 							"borderWidth": "2px"
 						}]
 					],
-					"toggled": false,
-					"min_zoom": "18",
+					"toggled": true,
+					"min_zoom": "17",
 					"max_zoom": "30"
 				},
 				{
