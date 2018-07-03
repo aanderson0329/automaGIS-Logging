@@ -832,7 +832,7 @@
 				{
 					"layer_name": "Sewer Mains",
 					"data_source_type": "MapServer",
-					"data_source": "http://mapdata.lasvegasnevada.gov/clvgis/rest/services/ExistingInfrastructure/SanitarySewer/MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/ExistingInfrastructure/SanitarySewer/MapServer",
 					"id_property_field": "OBJECTID",
 					"mapserver_layer_number": "1",
 					"layer_style": {
