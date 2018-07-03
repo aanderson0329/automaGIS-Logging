@@ -836,10 +836,10 @@
 					"id_property_field": "OBJECTID",
 					"mapserver_layer_number": "1",
 					"layer_style": {
-						"zIndex": 125,
-						"lineColor": "#000000",
+						"zIndex": 210,
+						"lineColor": "#8D182B",
 						"lineOpacity": 1.0,
-						"lineWeight": 2
+						"lineWeight": 4
 					},
 					"legend": [
 						["Sewer Mains", {"lineColor": "black", "lineWidth": "2px"}]
