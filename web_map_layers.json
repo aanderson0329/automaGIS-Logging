@@ -837,9 +837,9 @@
 					"mapserver_layer_number": "1",
 					"layer_style": {
 						"zIndex": 125,
-						"strokeColor": "#000000",
-						"strokeOpacity": 1.0,
-						"strokeWeight": 2
+						"lineColor": "#000000",
+						"lineOpacity": 1.0,
+						"lineWeight": 2
 					},
 					"legend": [
 						["Sewer Mains", {"lineColor": "black", "lineWidth": "2px"}]
