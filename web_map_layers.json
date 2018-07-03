@@ -829,6 +829,25 @@
 		{
 			"group_name": "Existing Infrastructure",
 			"layers": [
+				{
+					"layer_name": "Sewer Mains",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/DevelopmentServices/BuildingFootprints/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "1",
+					"layer_style": {
+						"zIndex": 125,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Sewer Mains", {"lineColor": "black", "lineWidth": "2px"}]
+					],
+					"toggled": false,
+					"min_zoom": "17",
+					"max_zoom": "30"
+				},
 				{					
 					"layer_name": "Privately Maintained Sewer Lines",
 					"data_source": "https://opendata.arcgis.com/datasets/db97bd37be0544819d10b4b34e4c2c1c_3.geojson",
