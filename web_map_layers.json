@@ -833,7 +833,7 @@
 					"layer_name": "Sewer Mains",
 					"data_source_type": "MapServer",
 					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/ExistingInfrastructure/CollectionSystems/MapServer",
-					"id_property_field": "OBJECTID",
+					"id_property_field": "OBJECTID_4234",
 					"mapserver_layer_number": "9",
 					"layer_style": {
 						"zIndex": 210,
