@@ -996,7 +996,7 @@
 					"max_zoom": "30"				
 				},
 				{					
-					"layer_name": "LVMPD Marshal Beats",
+					"layer_name": "CLV Marshal Beats",
 					"data_source": "https://opendata.arcgis.com/datasets/6368cddd897b48749741312b06d2445f_3.geojson",
 					"data_source_type": "geojson",
 					"id_property_field": "OBJECTID",
@@ -1009,7 +1009,7 @@
 						"strokeWeight": 2
 					},
 					"legend": [
-						["LVMPD Marshal Beats", {
+						["CLV Marshal Beats", {
 							"fillColor": "rgba(227, 123, 64, 0.5)",
 							"borderColor": "rgba(227, 123, 64, 1)",
 							"borderWidth": "2px"
