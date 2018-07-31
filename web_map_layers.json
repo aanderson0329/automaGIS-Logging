@@ -1055,10 +1055,10 @@
 					"data_source": "https://opendata.arcgis.com/datasets/d922d87ab66e4a72bf90645f0dac4907_0.geojson",
 					"id_property_field":"OBJECTID",
 					"layer_style": {
-						"zIndex": 200,
-						"lineColor":"#000000",
-						"lineOpacity": 1.0,
-						"lineWeight": 4
+						"layer_style_rules": {
+							"function": "var freewayType = feature.getProperty('STRCLASS');var opacity = 0;if (freewayType == 'COUNTY HIGHWAY' || freewayType == 'INTERSTATE' || freewayType == 'STATE HIGHWAY' || freewayType == 'US HIGHWAY') {opacity = 1.0;}  return {strokeColor: 'black',strokeOpacity: opacity,strokeWeight: 4,zIndex: 200};",
+							"parameters": "feature"
+						 }  
 					},
 					"legend": [
 						["Freeways and Highways", {"lineColor": "black", "lineWidth": "4px"}]
