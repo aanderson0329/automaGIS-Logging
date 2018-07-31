@@ -1093,10 +1093,10 @@
 					"layer_style": {
 						"zIndex": 251,
 						"fillColor": "pink",
-						"fillOpacity": 0.2,
-						"lineColor":"pink",
-						"lineOpacity": 1.0,
-						"lineWeight": 3
+						"fillOpacity": 0.7,
+						"strokeColor":"pink",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 3
 					},
 					"legend": [
 						["Downtown Loop Route", {"lineColor": "pink", "lineWidth": "4px"}]
