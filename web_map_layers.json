@@ -1074,12 +1074,12 @@
 					"id_property_field":"OBJECTID",
 					"layer_style": {
 						"zIndex": 201,
-						"lineColor":"#A3A3A3",
+						"lineColor":"#BF112E",
 						"lineOpacity": 1.0,
 						"lineWeight": 3
 					},
 					"legend": [
-						["Through Streets", {"lineColor": "grey", "lineWidth": "3px"}]
+						["Through Streets", {"lineColor": "#BF112E", "lineWidth": "3px"}]
 					],
 					"toggled": false,
 					"min_zoom": "10",
