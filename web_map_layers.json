@@ -1286,13 +1286,28 @@
 					"data_source": "https://opendata.arcgis.com/datasets/3b2003532b854b22b5694ce93d59ee60_0.geojson",
 					"id_property_field":"OBJECTID",
 					"layer_style": {
-						"zIndex": 255,
-						"lineColor":"yellow",
-						"lineOpacity": 1.0,
-						"lineWeight": 3
+						"layer_style_rules": {
+							"function": "var speed = feature.getProperty('TITLE');var color = 'black';if (speed == '15 MPH SPEED LIMIT') {color = '#40BAE8';} else if (speed == 'SCHOOL SPEED LIMIT 15') {color = '#AC4FFF';} else if (speed == 'SCHOOL SPEED LIMIT 25') {color = '#EB55FC';} else if (speed == 'TRUCK SPEED LIMIT 25') {color = '#5656ED';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 4,zIndex: 253};",
+							"parameters": "feature"
+						 }
 					},
 					"legend": [
-						["Special Speed Limits", {"lineColor": "yellow", "lineWidth": "3px"}]
+						["15 MPH", {
+							"lineColor": "rgba(64, 186, 232, 1)",
+							"lineWidth": "4px"
+						}],
+						["15 MPH - School Zone", {
+							"lineColor": "rgba(172, 79, 255, 1)",
+							"lineWidth": "4px"
+						}],
+						["25 MPH - School Zone", {
+							"lineColor": "rgba(235, 85, 252, 1)",
+							"lineWidth": "4px"
+						}],
+						["25 MPH - Max Truck Speed", {
+							"lineColor": "rgba(86, 86, 237, 1)",
+							"lineWidth": "4px"
+						}]
 					],
 					"toggled": false,
 					"min_zoom": "10",
