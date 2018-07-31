@@ -1249,13 +1249,32 @@
 					"data_source": "https://opendata.arcgis.com/datasets/1c82211c596849509eea76573dee3863_1.geojson",
 					"id_property_field":"OBJECTID",
 					"layer_style": {
-						"zIndex": 255,
-						"lineColor":"green",
-						"lineOpacity": 1.0,
-						"lineWeight": 3
+						"layer_style_rules": {
+							"function": "var speed = feature.getProperty('TITLE');var color = 'black';if (speed == '30 MPH SPEED LIMIT') {color = '#1FB021';} else if (speed == '35 MPH SPEED LIMIT') {color = '#CCFF31';} else if (speed == '40 MPH SPEED LIMIT') {color = '#FCCF17';} else if (speed == '45 MPH SPEED LIMIT') {color = '#FF9600';} else if (speed == '65 MPH SPEED LIMIT') {color = '#E84A0C';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 4,zIndex: 252};",
+							"parameters": "feature"
+						 }
 					},
 					"legend": [
-						["Regular Speed Limits", {"lineColor": "green", "lineWidth": "3px"}]
+						["30 MPH", {
+							"lineColor": "rgba(31, 176, 33, 1)",
+							"lineWidth": "4px"
+						}],
+						["35 MPH", {
+							"lineColor": "rgba(204, 255, 49, 1)",
+							"lineWidth": "4px"
+						}],
+						["40 MPH", {
+							"lineColor": "rgba(252, 207, 23, 1)",
+							"lineWidth": "4px"
+						}],
+						["45 MPH", {
+							"lineColor": "rgba(255, 150, 0, 1)",
+							"lineWidth": "4px"
+						}],
+						["65 MPH", {
+							"lineColor": "rgba(232, 74, 12, 1)",
+							"lineWidth": "4px"
+						}]
 					],
 					"toggled": false,
 					"min_zoom": "10",
