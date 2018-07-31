@@ -1052,13 +1052,13 @@
 				{
 					"layer_name": "Freeways and Highways",
 					"data_source_type": "geojson",
-					"data_source": "https://opendata.arcgis.com/datasets/d922d87ab66e4a72bf90645f0dac4907_0.geojson",
+					"data_source": "https://opendata.arcgis.com/datasets/1ca6ee800bba4bca83390ed8c920db40_7.geojson",
 					"id_property_field":"OBJECTID",
 					"layer_style": {
-						"layer_style_rules": {
-							"function": "var freewayType = feature.getProperty('STRCLASS');var opacity = 0;if (freewayType == 'COUNTY HIGHWAY' || freewayType == 'INTERSTATE' || freewayType == 'STATE HIGHWAY' || freewayType == 'US HIGHWAY') {opacity = 1.0;}  return {strokeColor: 'black',strokeOpacity: opacity,strokeWeight: 4,zIndex: 200};",
-							"parameters": "feature"
-						 }  
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 4,
+						"zIndex": 55 
 					},
 					"legend": [
 						["Freeways and Highways", {"lineColor": "black", "lineWidth": "4px"}]
