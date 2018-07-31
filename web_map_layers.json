@@ -1287,7 +1287,7 @@
 					"id_property_field":"OBJECTID",
 					"layer_style": {
 						"layer_style_rules": {
-							"function": "var speed = feature.getProperty('TITLE');var color = 'black';if (speed == '15 MPH SPEED LIMIT') {color = '#40BAE8';} else if (speed == 'SCHOOL SPEED LIMIT 15') {color = '#AC4FFF';} else if (speed == 'SCHOOL SPEED LIMIT 25') {color = '#EB55FC';} else if (speed == 'TRUCK SPEED LIMIT 25') {color = '#5656ED';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 4,zIndex: 253};",
+							"function": "var speed = feature.getProperty('TITLE');var color = 'black';if (speed == '15 MPH SPEED LIMIT') {color = '#40BAE8';} else if (speed == 'SCHOOL SPEED LIMIT 15') {color = '#AC4FFF';} else if (speed == 'SCHOOL SPEED LIMIT 25') {color = '#EB55FC';} else if (speed == 'TRUCK SPEED LIMIT 25 MPH') {color = '#5656ED';} return {fillColor: color,fillOpacity: 0.5,strokeColor: color,strokeOpacity: 1.0,strokeWeight: 4,zIndex: 253};",
 							"parameters": "feature"
 						 }
 					},
