@@ -1357,12 +1357,6 @@
 			"dpi": "96"
 		},
 		{
-			"name": "Easements",
-			"url": "http://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/Easement/MapServer/export",
-			"transparent": true,
-			"dpi": "96"
-		},
-		{
 			"name": "Contours - 2ft",
 			"url": "http://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/con2016_2ft/MapServer/export",
 			"transparent": true,
