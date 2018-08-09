@@ -1374,5 +1374,229 @@
 			"transparent": true,
 			"dpi": "96"
 		}
+	],
+	"county_aerials": [
+		{
+			"name": "mostcurrentflight",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/mostcurrentflight/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "Ortho90",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesOrtho90/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "Ortho96",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesOrtho96/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "DOQQ",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesDOQQ/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S99",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS99/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S00",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS00/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S01",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS01/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S02",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS02/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S03",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS03/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S04",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS04/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S05",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS05/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S06",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS06/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S07",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS07/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S08",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS08/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S09",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS09/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S10",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS10/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S12",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS12/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S13",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS13/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S14",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS14/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S15",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS15/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S16",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesS16_1/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "S17",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/im_S17/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F98",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF98/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F99",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF99/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F00",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF00/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F01",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF01/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F02",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF02/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F03",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF03/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F04",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF04/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F05",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF05/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F06",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF06/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F07",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF07/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F08",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF08/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F09",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF09/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "F11",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesF11/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "NAIP10",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesNAIP10/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
+			"name": "NAIP13",
+			"url": "http://gisgate.co.clark.nv.us/arcgis/rest/services/CACHED/imagesNAIP13/MapServer/export",
+			"transparent": true,
+			"dpi": "96"
+		}
 	]
 }
