@@ -1334,37 +1334,37 @@
 	"map_overlays": [
 		{
 			"name": "Assessor's Map",
-			"url": "http://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/AssessorMap/MapServer/export",
+			"url": "https://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/AssessorMap/MapServer/export",
 			"transparent": true,
 			"dpi": "96"
 		},
 		{
 			"name": "Assessor's Annotation",
-			"url": "http://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/AssessorAnno/MapServer/export",
+			"url": "https://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/AssessorAnno/MapServer/export",
 			"transparent": true,
 			"dpi": "96"
 		},
 		{
 			"name": "Street Centerline",
-			"url": "http://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/scl/MapServer/export",
+			"url": "https://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/scl/MapServer/export",
 			"transparent": true,
 			"dpi": "96"
 		},
 		{
-			"name": "All Annotation",
-			"url": "http://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/Annotation/MapServer/export",
+			"name": "CLV Basemap",
+			"url": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/BaseMaps/CLVBaseMap/MapServer/export",
 			"transparent": true,
 			"dpi": "96"
 		},
 		{
 			"name": "Contours - 2ft",
-			"url": "http://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/con2016_2ft/MapServer/export",
+			"url": "https://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/con2016_2ft/MapServer/export",
 			"transparent": true,
 			"dpi": "96"
 		},
 		{
 			"name": "Contours - 50m",
-			"url": "http://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/con_50M/MapServer/export",
+			"url": "https://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/con_50M/MapServer/export",
 			"transparent": true,
 			"dpi": "96"
 		}
