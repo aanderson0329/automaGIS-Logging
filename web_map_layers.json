@@ -1357,6 +1357,12 @@
 			"dpi": "96"
 		},
 		{
+			"name": "Innovation District",
+			"url": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
+			"transparent": true,
+			"dpi": "96"
+		},
+		{
 			"name": "Contours - 2ft",
 			"url": "https://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/con2016_2ft/MapServer/export",
 			"transparent": true,
