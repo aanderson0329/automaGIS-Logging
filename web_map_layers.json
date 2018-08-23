@@ -439,31 +439,6 @@
 					"max_zoom": "30"
 				},
 				{
-					"layer_name": "Medical District",
-					"data_source_type": "MapServer",
-					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
-					"id_property_field": "OBJECTID",
-					"mapserver_layer_number": "7",
-					"layer_style": {
-						"zIndex": 125,
-						"fillColor": "#687A80",
-						"fillOpacity": 0.7,
-						"strokeColor": "#687A80",
-						"strokeOpacity": 1.0,
-						"strokeWeight": 2
-					},
-					"legend": [
-						["Medical District", {
-							"fillColor": "rgba(104, 122, 128, 0.7)",
-							"borderColor": "rgba(104, 122, 128, 1)",
-							"borderWidth": "2px"
-						}]
-					],
-					"toggled": false,
-					"min_zoom": "13",
-					"max_zoom": "30"
-				},
-				{
 					"layer_name": "Entertainment District",
 					"data_source_type": "MapServer",
 					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
