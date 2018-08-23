@@ -308,6 +308,208 @@
 			]
 		},
 		{
+			"group_name": "Innovation District",
+			"layers": [
+				{
+					"layer_name": "Streetlights",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedLayers/Streetlights/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "0",
+					"layer_style": {
+						"icon": "/static/img/map_icons/purpleDot.png"
+					},
+					"legend": [
+						["Streetlights", {"icon": "/static/img/map_icons/purpleDot.png"}]
+					],
+					"toggled": false,
+					"min_zoom": "17",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Downtown Master Plan Districts",
+					"data_source": "https://opendata.arcgis.com/datasets/89540001c0fe40469fa03baa465e4311_0.geojson",
+					"data_source_type": "geojson",
+					"id_property_field": "OBJECTID_1",
+					"layer_style": {
+						"zIndex": 55,
+						"fillColor": "red",
+						"fillOpacity": 0.5,
+						"strokeColor": "red",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 3
+					},
+					"legend": [
+						["Downtown Master Plan Districts", {
+							"fillColor": "rgba(0, 0, 0, 0)",
+							"borderColor": "rgba(255, 33, 24, 1)",
+							"borderWidth": "3px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "10",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Fiber",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "4",
+					"layer_style": {
+						"zIndex": 210,
+						"lineColor": "#8D182B",
+						"lineOpacity": 1.0,
+						"lineWeight": 4
+					},
+					"legend": [
+						["Fiber", {"lineColor": "#8D182B", "lineWidth": "4px"}]
+					],
+					"toggled": false,
+					"min_zoom": "13",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Connected Corridors",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "5",
+					"layer_style": {
+						"zIndex": 210,
+						"lineColor": "#EEC9C8",
+						"lineOpacity": 1.0,
+						"lineWeight": 4
+					},
+					"legend": [
+						["Fiber", {"lineColor": "#EEC9C8", "lineWidth": "4px"}]
+					],
+					"toggled": false,
+					"min_zoom": "13",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Initial Downtown Wifi Boundary",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "6",
+					"layer_style": {
+						"zIndex": 125,
+						"fillColor": "#000000",
+						"fillOpacity": 0.7,
+						"strokeColor": "#000000",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Building Footprints", {
+							"fillColor": "rgba(0, 0, 0, 0.7)",
+							"borderColor": "rgba(0, 0, 0, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "13",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Medical District",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "7",
+					"layer_style": {
+						"zIndex": 125,
+						"fillColor": "#687A80",
+						"fillOpacity": 0.7,
+						"strokeColor": "#687A80",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Medical District", {
+							"fillColor": "rgba(104, 122, 128, 0.7)",
+							"borderColor": "rgba(104, 122, 128, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "13",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Medical District",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "7",
+					"layer_style": {
+						"zIndex": 125,
+						"fillColor": "#687A80",
+						"fillOpacity": 0.7,
+						"strokeColor": "#687A80",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Medical District", {
+							"fillColor": "rgba(104, 122, 128, 0.7)",
+							"borderColor": "rgba(104, 122, 128, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "13",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Entertainment District",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "8",
+					"layer_style": {
+						"zIndex": 125,
+						"fillColor": "#3134DF",
+						"fillOpacity": 0.7,
+						"strokeColor": "#3134DF",
+						"strokeOpacity": 1.0,
+						"strokeWeight": 2
+					},
+					"legend": [
+						["Entertainment District", {
+							"fillColor": "rgba(49, 52, 223, 0.7)",
+							"borderColor": "rgba(49, 52, 223, 1)",
+							"borderWidth": "2px"
+						}]
+					],
+					"toggled": false,
+					"min_zoom": "13",
+					"max_zoom": "30"
+				},
+				{
+					"layer_name": "Railroads",
+					"data_source_type": "MapServer",
+					"data_source": "https://mapdata.lasvegasnevada.gov/clvgis/rest/services/PublishedMaps/InnovationDistrictPublishedMap/MapServer",
+					"id_property_field": "OBJECTID",
+					"mapserver_layer_number": "15",
+					"layer_style": {
+						"zIndex": 210,
+						"lineColor": "#DFBF6D",
+						"lineOpacity": 1.0,
+						"lineWeight": 4
+					},
+					"legend": [
+						["Fiber", {"lineColor": "#DFBF6D", "lineWidth": "4px"}]
+					],
+					"toggled": false,
+					"min_zoom": "15",
+					"max_zoom": "30"
+				}
+			]
+		},
+		{
 			"group_name": "Administrative Boundaries",
 			"layers": [
 				{
